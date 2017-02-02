@@ -7,9 +7,9 @@
  *
  * Code generation for model "ctrl_student_HIL".
  *
- * Model version              : 1.97
+ * Model version              : 1.99
  * Simulink Coder version : 8.8 (R2015a) 09-Feb-2015
- * C source code generated on : Thu Feb 02 10:59:39 2017
+ * C source code generated on : Thu Feb 02 13:57:54 2017
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -301,7 +301,7 @@ void ctrl_student_HIL_output(void)
   /* '<S14>:1:4' */
   /* use if sentence to calculate the correct rotational speed. */
   if (ctrl_student_HIL_X.Integrator_CSTATE - floor
-      (ctrl_student_HIL_X.Integrator_CSTATE) == 0.0) {
+      (ctrl_student_HIL_X.Integrator_CSTATE) <= 0.01) {
     /* '<S14>:1:6' */
     /* '<S14>:1:7' */
     Omega = (0.1 * ctrl_student_HIL_B.ArrowUp + ctrl_student_HIL_B.Memory) - 0.1
@@ -1534,8 +1534,8 @@ NI_Task NI_TaskList[] DataSection(".NIVS.tasklist") =
 int NI_NumTasks DataSection(".NIVS.numtasks") = 1;
 static char* NI_CompiledModelName DataSection(".NIVS.compiledmodelname") =
   "ctrl_student_hil";
-static char* NI_CompiledModelVersion = "1.97";
-static char* NI_CompiledModelDateTime = "Thu Feb 02 10:59:39 2017";
+static char* NI_CompiledModelVersion = "1.99";
+static char* NI_CompiledModelDateTime = "Thu Feb 02 13:57:53 2017";
 static char* NI_builder DataSection(".NIVS.builder") =
   "NI VeriStand 2014.0.0.82 (2014) RTW Build";
 static char* NI_BuilderVersion DataSection(".NIVS.builderversion") =

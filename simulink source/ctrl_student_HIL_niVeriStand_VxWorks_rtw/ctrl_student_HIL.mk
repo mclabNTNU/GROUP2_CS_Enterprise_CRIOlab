@@ -65,9 +65,9 @@ ALT_MATLAB_BIN  		:= C:\PROGRA~1\MATLAB\R2015a\bin
 S_FUNCTIONS     		:= 
 S_FUNCTIONS_LIB 		:= 
 SOLVER          		:= 
-NUMST           		:= 1
-TID01EQ         		:= 0
-NCSTATES        		:= 0
+NUMST           		:= 2
+TID01EQ         		:= 1
+NCSTATES        		:= 1
 BUILDARGS       		:=  NIDEBUG=0 NIOPT="Default" OPTS="" ISPROTECTINGMODEL=NOTPROTECTING
 MULTITASKING    		:= 0
 EXT_MODE        		:= 0
@@ -152,8 +152,8 @@ MATLAB_INCLUDES := $(MATLAB_INCLUDES) -I$(MATLAB_ROOT)\rtw\c\src\ext_mode\common
 # Additional file include paths
 
 
-MATLAB_INCLUDES := $(MATLAB_INCLUDES) -IC:\Users\MCLab\DOCUME~1\GitHub\CS_ENT~2\SIMULI~1\ctrl_student_HIL_niVeriStand_VxWorks_rtw
-MATLAB_INCLUDES := $(MATLAB_INCLUDES) -IC:\Users\MCLab\DOCUME~1\GitHub\CS_ENT~2\SIMULI~1
+MATLAB_INCLUDES := $(MATLAB_INCLUDES) -IC:\Users\MCLab\DOCUME~1\GitHub\GROUP2~1\SIMULI~1\ctrl_student_HIL_niVeriStand_VxWorks_rtw
+MATLAB_INCLUDES := $(MATLAB_INCLUDES) -IC:\Users\MCLab\DOCUME~1\GitHub\GROUP2~1\SIMULI~1
 
 INCLUDE := -I$(RELATIVE_PATH_TO_ANCHOR) $(MATLAB_INCLUDES) $(MODELREF_INC_PATH) -I$(NIVERISTAND_ROOT)/ModelInterface/ $(COMPILER_INCLUDES) -I.
 ifneq "$(SHARED_SRC_DIR)" ""

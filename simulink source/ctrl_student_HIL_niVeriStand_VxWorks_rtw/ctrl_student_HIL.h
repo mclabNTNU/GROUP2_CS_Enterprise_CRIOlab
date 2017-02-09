@@ -7,9 +7,9 @@
  *
  * Code generation for model "ctrl_student_HIL".
  *
- * Model version              : 1.99
+ * Model version              : 1.127
  * Simulink Coder version : 8.8 (R2015a) 09-Feb-2015
- * C source code generated on : Thu Feb 02 13:57:54 2017
+ * C source code generated on : Thu Feb 09 15:43:12 2017
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -818,123 +818,155 @@ typedef struct {
   real_T r_in;                         /* '<Root>/r_in' */
   real_T u_in;                         /* '<Root>/u_in' */
   real_T v_in;                         /* '<Root>/v_in' */
-  real_T L2_continuous;                /* '<S2>/L2_continuous' */
-  real_T PosXLeft;                     /* '<S2>/PosXLeft' */
-  real_T PosYLeft;                     /* '<S2>/PosYLeft' */
-  real_T PosXRight;                    /* '<S2>/PosXRight' */
-  real_T PosYRight;                    /* '<S2>/PosYRight' */
-  real_T ArrowUp;                      /* '<S2>/ArrowUp' */
-  real_T ArrowDown;                    /* '<S2>/ArrowDown' */
-  real_T Memory;                       /* '<S2>/Memory' */
-  real_T R2_continuous;                /* '<S2>/R2_continuous' */
-  real_T L1;                           /* '<S2>/L1' */
-  real_T R1;                           /* '<S2>/R1' */
-  real_T ArrowLeft;                    /* '<S2>/ArrowLeft' */
-  real_T ArrowRight;                   /* '<S2>/ArrowRight' */
-  real_T u_BT;                         /* '<S2>/bow thruster' */
-  real_T Omega1;                       /* '<S2>/Voith Schneider Propeller' */
-  real_T Omega2;                       /* '<S2>/Voith Schneider Propeller' */
-  real_T u_VSP;                        /* '<S2>/MATLAB Function1' */
-  real_T a_VSP;                        /* '<S2>/MATLAB Function1' */
-  real_T u;                            /* '<S2>/MATLAB Function' */
-  real_T a;                            /* '<S2>/MATLAB Function' */
-  real_T output[3];                    /* '<S5>/MATLAB Function1' */
-  real_T count;                        /* '<S4>/MATLAB Function' */
+  real_T L2_continuous;                /* '<S8>/L2_continuous' */
+  real_T PosXLeft;                     /* '<S8>/PosXLeft' */
+  real_T PosYLeft;                     /* '<S8>/PosYLeft' */
+  real_T PosXRight;                    /* '<S8>/PosXRight' */
+  real_T PosYRight;                    /* '<S8>/PosYRight' */
+  real_T ArrowUp;                      /* '<S8>/ArrowUp' */
+  real_T ArrowDown;                    /* '<S8>/ArrowDown' */
+  real_T Memory;                       /* '<S8>/Memory' */
+  real_T R2_continuous;                /* '<S8>/R2_continuous' */
+  real_T L1;                           /* '<S8>/L1' */
+  real_T R1;                           /* '<S8>/R1' */
+  real_T ArrowLeft;                    /* '<S8>/ArrowLeft' */
+  real_T ArrowRight;                   /* '<S8>/ArrowRight' */
+  real_T Product;                      /* '<S16>/Product' */
+  real_T Product_l;                    /* '<S17>/Product' */
+  real_T Product_e;                    /* '<S15>/Product' */
+  real_T Hold[3];                      /* '<S11>/Hold' */
+  real_T Memory2[10];                  /* '<Root>/Memory2' */
+  real_T Memory1[10];                  /* '<Root>/Memory1' */
+  real_T Memory3;                      /* '<Root>/Memory3' */
+  real_T k_psi0;                       /* '<Root>/k_psi0' */
+  real_T Memory_a;                     /* '<Root>/Memory' */
+  real_T Integrator3;                  /* '<Root>/Integrator3' */
+  real_T Sum2;                         /* '<Root>/Sum2' */
+  real_T Omega1;                       /* '<S8>/Voith Schneider Propeller' */
+  real_T Omega2;                       /* '<S8>/Voith Schneider Propeller' */
+  real_T u_VSP;                        /* '<S8>/MATLAB Function1' */
+  real_T a_VSP;                        /* '<S8>/MATLAB Function1' */
+  real_T u;                            /* '<S8>/MATLAB Function' */
+  real_T a;                            /* '<S8>/MATLAB Function' */
+  real_T u_BT;                         /* '<S8>/Bow thruster' */
+  real_T x_d1;                         /* '<Root>/Tank Limits' */
+  real_T M1;                           /* '<Root>/Tank Limits' */
+  real_T u_hat;                        /* '<Root>/Proportional' */
+  real_T output[3];                    /* '<S11>/MATLAB Function1' */
+  real_T count;                        /* '<S10>/MATLAB Function' */
+  real_T Mx1[10];                      /* '<Root>/MATLAB Function' */
+  real_T My1[10];                      /* '<Root>/MATLAB Function' */
+  real_T U;                            /* '<Root>/ Integral' */
 } B_ctrl_student_HIL_T;
 
 /* Block states (auto storage) for system '<Root>' */
 typedef struct {
   real_T y_in_DWORK1;                  /* '<Root>/y_in' */
   real_T psi_in_DWORK1;                /* '<Root>/psi_in' */
-  real_T counter_PreviousInput;        /* '<S4>/counter' */
-  real_T Hold_PreviousInput[3];        /* '<S5>/Hold' */
-  real_T NextOutput;                   /* '<S10>/White Noise' */
-  real_T NextOutput_c;                 /* '<S11>/White Noise' */
-  real_T NextOutput_p;                 /* '<S9>/White Noise' */
   real_T x_in_DWORK1;                  /* '<Root>/x_in' */
   real_T r_in_DWORK1;                  /* '<Root>/r_in' */
   real_T u_in_DWORK1;                  /* '<Root>/u_in' */
   real_T v_in_DWORK1;                  /* '<Root>/v_in' */
-  real_T L2_continuous_DWORK1;         /* '<S2>/L2_continuous' */
-  real_T PosXLeft_DWORK1;              /* '<S2>/PosXLeft' */
-  real_T PosYLeft_DWORK1;              /* '<S2>/PosYLeft' */
-  real_T u_VSP1_DWORK1;                /* '<S2>/u_VSP1' */
-  real_T alpha_VSP1_DWORK1;            /* '<S2>/alpha_VSP1' */
-  real_T PosXRight_DWORK1;             /* '<S2>/PosXRight' */
-  real_T PosYRight_DWORK1;             /* '<S2>/PosYRight' */
-  real_T ArrowUp_DWORK1;               /* '<S2>/ArrowUp' */
-  real_T ArrowDown_DWORK1;             /* '<S2>/ArrowDown' */
-  real_T Memory_PreviousInput;         /* '<S2>/Memory' */
-  real_T omega_VSP1_DWORK1;            /* '<S2>/omega_VSP1' */
-  real_T R2_continuous_DWORK1;         /* '<S2>/R2_continuous' */
-  real_T omega_VSP2_DWORK1;            /* '<S2>/omega_VSP2' */
-  real_T u_BT_DWORK1;                  /* '<S2>/u_BT' */
-  real_T alpha_VSP2_DWORK1;            /* '<S2>/alpha_VSP2' */
-  real_T u_VSP2_DWORK1;                /* '<S2>/u_VSP2' */
-  real_T L1_DWORK1;                    /* '<S2>/L1' */
-  real_T R1_DWORK1;                    /* '<S2>/R1' */
-  real_T ArrowLeft_DWORK1;             /* '<S2>/ArrowLeft' */
-  real_T ArrowRight_DWORK1;            /* '<S2>/ArrowRight' */
-  real_T X_d_DWORK1;                   /* '<S3>/X_d' */
-  real_T N_d_DWORK1;                   /* '<S3>/N_d' */
-  real_T Y_d_DWORK1;                   /* '<S3>/Y_d' */
-  real_T psi_0_DWORK1;                 /* '<S3>/psi_0 ' */
-  real_T x_0_DWORK1;                   /* '<S3>/x_0' */
-  real_T y_0_DWORK1;                   /* '<S3>/y_0' */
-  real_T integratorresetmodel_DWORK1;  /* '<S3>/integrator reset model' */
+  real_T L2_continuous_DWORK1;         /* '<S8>/L2_continuous' */
+  real_T PosXLeft_DWORK1;              /* '<S8>/PosXLeft' */
+  real_T PosYLeft_DWORK1;              /* '<S8>/PosYLeft' */
+  real_T u_VSP1_DWORK1;                /* '<S8>/u_VSP1' */
+  real_T alpha_VSP1_DWORK1;            /* '<S8>/alpha_VSP1' */
+  real_T PosXRight_DWORK1;             /* '<S8>/PosXRight' */
+  real_T PosYRight_DWORK1;             /* '<S8>/PosYRight' */
+  real_T ArrowUp_DWORK1;               /* '<S8>/ArrowUp' */
+  real_T ArrowDown_DWORK1;             /* '<S8>/ArrowDown' */
+  real_T Memory_PreviousInput;         /* '<S8>/Memory' */
+  real_T omega_VSP1_DWORK1;            /* '<S8>/omega_VSP1' */
+  real_T R2_continuous_DWORK1;         /* '<S8>/R2_continuous' */
+  real_T omega_VSP2_DWORK1;            /* '<S8>/omega_VSP2' */
+  real_T u_BT_DWORK1;                  /* '<S8>/u_BT' */
+  real_T alpha_VSP2_DWORK1;            /* '<S8>/alpha_VSP2' */
+  real_T u_VSP2_DWORK1;                /* '<S8>/u_VSP2' */
+  real_T L1_DWORK1;                    /* '<S8>/L1' */
+  real_T R1_DWORK1;                    /* '<S8>/R1' */
+  real_T ArrowLeft_DWORK1;             /* '<S8>/ArrowLeft' */
+  real_T ArrowRight_DWORK1;            /* '<S8>/ArrowRight' */
+  real_T counter_PreviousInput;        /* '<S10>/counter' */
+  real_T NextOutput;                   /* '<S16>/White Noise' */
+  real_T NextOutput_c;                 /* '<S17>/White Noise' */
+  real_T NextOutput_p;                 /* '<S15>/White Noise' */
+  real_T Hold_PreviousInput[3];        /* '<S11>/Hold' */
+  real_T Memory2_PreviousInput[10];    /* '<Root>/Memory2' */
+  real_T Memory1_PreviousInput[10];    /* '<Root>/Memory1' */
+  real_T Memory3_PreviousInput;        /* '<Root>/Memory3' */
+  real_T X_d_DWORK1;                   /* '<S9>/X_d' */
+  real_T N_d_DWORK1;                   /* '<S9>/N_d' */
+  real_T Y_d_DWORK1;                   /* '<S9>/Y_d' */
+  real_T psi_0_DWORK1;                 /* '<S9>/psi_0 ' */
+  real_T x_0_DWORK1;                   /* '<S9>/x_0' */
+  real_T y_0_DWORK1;                   /* '<S9>/y_0' */
+  real_T integratorresetmodel_DWORK1;  /* '<S9>/integrator reset model' */
+  real_T k_psi0_DWORK1;                /* '<Root>/k_psi0' */
+  real_T Memory_PreviousInput_m;       /* '<Root>/Memory' */
   int32_T NIVeriStandSignalProbe_DWORK2;/* '<Root>/NIVeriStandSignalProbe' */
-  uint32_T RandSeed;                   /* '<S10>/White Noise' */
-  uint32_T RandSeed_j;                 /* '<S11>/White Noise' */
-  uint32_T RandSeed_c;                 /* '<S9>/White Noise' */
+  uint32_T RandSeed;                   /* '<S16>/White Noise' */
+  uint32_T RandSeed_j;                 /* '<S17>/White Noise' */
+  uint32_T RandSeed_c;                 /* '<S15>/White Noise' */
   uint8_T y_in_DWORK2[17];             /* '<Root>/y_in' */
   uint8_T psi_in_DWORK2[17];           /* '<Root>/psi_in' */
   uint8_T x_in_DWORK2[17];             /* '<Root>/x_in' */
   uint8_T r_in_DWORK2[17];             /* '<Root>/r_in' */
   uint8_T u_in_DWORK2[17];             /* '<Root>/u_in' */
   uint8_T v_in_DWORK2[17];             /* '<Root>/v_in' */
-  uint8_T L2_continuous_DWORK2[17];    /* '<S2>/L2_continuous' */
-  uint8_T PosXLeft_DWORK2[17];         /* '<S2>/PosXLeft' */
-  uint8_T PosYLeft_DWORK2[17];         /* '<S2>/PosYLeft' */
-  uint8_T u_VSP1_DWORK2[17];           /* '<S2>/u_VSP1' */
-  uint8_T alpha_VSP1_DWORK2[17];       /* '<S2>/alpha_VSP1' */
-  uint8_T PosXRight_DWORK2[17];        /* '<S2>/PosXRight' */
-  uint8_T PosYRight_DWORK2[17];        /* '<S2>/PosYRight' */
-  uint8_T ArrowUp_DWORK2[17];          /* '<S2>/ArrowUp' */
-  uint8_T ArrowDown_DWORK2[17];        /* '<S2>/ArrowDown' */
-  uint8_T omega_VSP1_DWORK2[17];       /* '<S2>/omega_VSP1' */
-  uint8_T R2_continuous_DWORK2[17];    /* '<S2>/R2_continuous' */
-  uint8_T omega_VSP2_DWORK2[17];       /* '<S2>/omega_VSP2' */
-  uint8_T u_BT_DWORK2[17];             /* '<S2>/u_BT' */
-  uint8_T alpha_VSP2_DWORK2[17];       /* '<S2>/alpha_VSP2' */
-  uint8_T u_VSP2_DWORK2[17];           /* '<S2>/u_VSP2' */
-  uint8_T L1_DWORK2[17];               /* '<S2>/L1' */
-  uint8_T R1_DWORK2[17];               /* '<S2>/R1' */
-  uint8_T ArrowLeft_DWORK2[17];        /* '<S2>/ArrowLeft' */
-  uint8_T ArrowRight_DWORK2[17];       /* '<S2>/ArrowRight' */
-  uint8_T X_d_DWORK2[17];              /* '<S3>/X_d' */
-  uint8_T N_d_DWORK2[17];              /* '<S3>/N_d' */
-  uint8_T Y_d_DWORK2[17];              /* '<S3>/Y_d' */
-  uint8_T psi_0_DWORK2[17];            /* '<S3>/psi_0 ' */
-  uint8_T x_0_DWORK2[17];              /* '<S3>/x_0' */
-  uint8_T y_0_DWORK2[17];              /* '<S3>/y_0' */
-  uint8_T integratorresetmodel_DWORK2[17];/* '<S3>/integrator reset model' */
+  uint8_T L2_continuous_DWORK2[17];    /* '<S8>/L2_continuous' */
+  uint8_T PosXLeft_DWORK2[17];         /* '<S8>/PosXLeft' */
+  uint8_T PosYLeft_DWORK2[17];         /* '<S8>/PosYLeft' */
+  uint8_T u_VSP1_DWORK2[17];           /* '<S8>/u_VSP1' */
+  uint8_T alpha_VSP1_DWORK2[17];       /* '<S8>/alpha_VSP1' */
+  uint8_T PosXRight_DWORK2[17];        /* '<S8>/PosXRight' */
+  uint8_T PosYRight_DWORK2[17];        /* '<S8>/PosYRight' */
+  uint8_T ArrowUp_DWORK2[17];          /* '<S8>/ArrowUp' */
+  uint8_T ArrowDown_DWORK2[17];        /* '<S8>/ArrowDown' */
+  uint8_T omega_VSP1_DWORK2[17];       /* '<S8>/omega_VSP1' */
+  uint8_T R2_continuous_DWORK2[17];    /* '<S8>/R2_continuous' */
+  uint8_T omega_VSP2_DWORK2[17];       /* '<S8>/omega_VSP2' */
+  uint8_T u_BT_DWORK2[17];             /* '<S8>/u_BT' */
+  uint8_T alpha_VSP2_DWORK2[17];       /* '<S8>/alpha_VSP2' */
+  uint8_T u_VSP2_DWORK2[17];           /* '<S8>/u_VSP2' */
+  uint8_T L1_DWORK2[17];               /* '<S8>/L1' */
+  uint8_T R1_DWORK2[17];               /* '<S8>/R1' */
+  uint8_T ArrowLeft_DWORK2[17];        /* '<S8>/ArrowLeft' */
+  uint8_T ArrowRight_DWORK2[17];       /* '<S8>/ArrowRight' */
+  uint8_T X_d_DWORK2[17];              /* '<S9>/X_d' */
+  uint8_T N_d_DWORK2[17];              /* '<S9>/N_d' */
+  uint8_T Y_d_DWORK2[17];              /* '<S9>/Y_d' */
+  uint8_T psi_0_DWORK2[17];            /* '<S9>/psi_0 ' */
+  uint8_T x_0_DWORK2[17];              /* '<S9>/x_0' */
+  uint8_T y_0_DWORK2[17];              /* '<S9>/y_0' */
+  uint8_T integratorresetmodel_DWORK2[17];/* '<S9>/integrator reset model' */
+  uint8_T k_psi0_DWORK2[17];           /* '<Root>/k_psi0' */
   uint8_T NIVeriStandSignalProbe_DWORK1[17];/* '<Root>/NIVeriStandSignalProbe' */
   uint8_T NIVeriStandSignalProbe_DWORK3[60];/* '<Root>/NIVeriStandSignalProbe' */
 } DW_ctrl_student_HIL_T;
 
 /* Continuous states (auto storage) */
 typedef struct {
-  real_T Integrator_CSTATE;            /* '<S2>/Integrator' */
+  real_T Integrator_CSTATE;            /* '<S8>/Integrator' */
+  real_T Integrator4_CSTATE;           /* '<Root>/Integrator4' */
+  real_T Integrator_CSTATE_m;          /* '<Root>/Integrator' */
+  real_T Integrator3_CSTATE;           /* '<Root>/Integrator3' */
 } X_ctrl_student_HIL_T;
 
 /* State derivatives (auto storage) */
 typedef struct {
-  real_T Integrator_CSTATE;            /* '<S2>/Integrator' */
+  real_T Integrator_CSTATE;            /* '<S8>/Integrator' */
+  real_T Integrator4_CSTATE;           /* '<Root>/Integrator4' */
+  real_T Integrator_CSTATE_m;          /* '<Root>/Integrator' */
+  real_T Integrator3_CSTATE;           /* '<Root>/Integrator3' */
 } XDot_ctrl_student_HIL_T;
 
 /* State disabled  */
 typedef struct {
-  boolean_T Integrator_CSTATE;         /* '<S2>/Integrator' */
+  boolean_T Integrator_CSTATE;         /* '<S8>/Integrator' */
+  boolean_T Integrator4_CSTATE;        /* '<Root>/Integrator4' */
+  boolean_T Integrator_CSTATE_m;       /* '<Root>/Integrator' */
+  boolean_T Integrator3_CSTATE;        /* '<Root>/Integrator3' */
 } XDis_ctrl_student_HIL_T;
 
 #ifndef ODE4_INTG
@@ -999,42 +1031,6 @@ struct P_ctrl_student_HIL_T_ {
                                         */
   real_T psi_in_P6;                    /* Expression: btype
                                         * Referenced by: '<Root>/psi_in'
-                                        */
-  real_T Stepsize_Value;               /* Expression: 0.01
-                                        * Referenced by: '<S1>/Step size'
-                                        */
-  real_T counter_X0;                   /* Expression: 0
-                                        * Referenced by: '<S4>/counter'
-                                        */
-  real_T Hold_X0;                      /* Expression: 0
-                                        * Referenced by: '<S5>/Hold'
-                                        */
-  real_T WhiteNoise_Mean;              /* Expression: 0
-                                        * Referenced by: '<S10>/White Noise'
-                                        */
-  real_T WhiteNoise_StdDev;            /* Computed Parameter: WhiteNoise_StdDev
-                                        * Referenced by: '<S10>/White Noise'
-                                        */
-  real_T WhiteNoise_Seed;              /* Expression: 9024
-                                        * Referenced by: '<S10>/White Noise'
-                                        */
-  real_T WhiteNoise_Mean_h;            /* Expression: 0
-                                        * Referenced by: '<S11>/White Noise'
-                                        */
-  real_T WhiteNoise_StdDev_d;          /* Computed Parameter: WhiteNoise_StdDev_d
-                                        * Referenced by: '<S11>/White Noise'
-                                        */
-  real_T WhiteNoise_Seed_b;            /* Expression: 123
-                                        * Referenced by: '<S11>/White Noise'
-                                        */
-  real_T WhiteNoise_Mean_f;            /* Expression: 0
-                                        * Referenced by: '<S9>/White Noise'
-                                        */
-  real_T WhiteNoise_StdDev_g;          /* Computed Parameter: WhiteNoise_StdDev_g
-                                        * Referenced by: '<S9>/White Noise'
-                                        */
-  real_T WhiteNoise_Seed_l;            /* Expression: 9025
-                                        * Referenced by: '<S9>/White Noise'
                                         */
   real_T x_in_P1;                      /* Expression: width
                                         * Referenced by: '<Root>/x_in'
@@ -1109,490 +1105,583 @@ struct P_ctrl_student_HIL_T_ {
                                         * Referenced by: '<Root>/v_in'
                                         */
   real_T L2_continuous_P1;             /* Expression: width
-                                        * Referenced by: '<S2>/L2_continuous'
+                                        * Referenced by: '<S8>/L2_continuous'
                                         */
   real_T L2_continuous_P2;             /* Expression: dtype
-                                        * Referenced by: '<S2>/L2_continuous'
+                                        * Referenced by: '<S8>/L2_continuous'
                                         */
   real_T L2_continuous_P3;             /* Expression: portnum
-                                        * Referenced by: '<S2>/L2_continuous'
+                                        * Referenced by: '<S8>/L2_continuous'
                                         */
   real_T L2_continuous_P4;             /* Expression: stime
-                                        * Referenced by: '<S2>/L2_continuous'
+                                        * Referenced by: '<S8>/L2_continuous'
                                         */
   real_T L2_continuous_P5;             /* Expression: stype
-                                        * Referenced by: '<S2>/L2_continuous'
+                                        * Referenced by: '<S8>/L2_continuous'
                                         */
   real_T L2_continuous_P6;             /* Expression: btype
-                                        * Referenced by: '<S2>/L2_continuous'
+                                        * Referenced by: '<S8>/L2_continuous'
                                         */
   real_T PosXLeft_P1;                  /* Expression: width
-                                        * Referenced by: '<S2>/PosXLeft'
+                                        * Referenced by: '<S8>/PosXLeft'
                                         */
   real_T PosXLeft_P2;                  /* Expression: dtype
-                                        * Referenced by: '<S2>/PosXLeft'
+                                        * Referenced by: '<S8>/PosXLeft'
                                         */
   real_T PosXLeft_P3;                  /* Expression: portnum
-                                        * Referenced by: '<S2>/PosXLeft'
+                                        * Referenced by: '<S8>/PosXLeft'
                                         */
   real_T PosXLeft_P4;                  /* Expression: stime
-                                        * Referenced by: '<S2>/PosXLeft'
+                                        * Referenced by: '<S8>/PosXLeft'
                                         */
   real_T PosXLeft_P5;                  /* Expression: stype
-                                        * Referenced by: '<S2>/PosXLeft'
+                                        * Referenced by: '<S8>/PosXLeft'
                                         */
   real_T PosXLeft_P6;                  /* Expression: btype
-                                        * Referenced by: '<S2>/PosXLeft'
+                                        * Referenced by: '<S8>/PosXLeft'
                                         */
   real_T PosYLeft_P1;                  /* Expression: width
-                                        * Referenced by: '<S2>/PosYLeft'
+                                        * Referenced by: '<S8>/PosYLeft'
                                         */
   real_T PosYLeft_P2;                  /* Expression: dtype
-                                        * Referenced by: '<S2>/PosYLeft'
+                                        * Referenced by: '<S8>/PosYLeft'
                                         */
   real_T PosYLeft_P3;                  /* Expression: portnum
-                                        * Referenced by: '<S2>/PosYLeft'
+                                        * Referenced by: '<S8>/PosYLeft'
                                         */
   real_T PosYLeft_P4;                  /* Expression: stime
-                                        * Referenced by: '<S2>/PosYLeft'
+                                        * Referenced by: '<S8>/PosYLeft'
                                         */
   real_T PosYLeft_P5;                  /* Expression: stype
-                                        * Referenced by: '<S2>/PosYLeft'
+                                        * Referenced by: '<S8>/PosYLeft'
                                         */
   real_T PosYLeft_P6;                  /* Expression: btype
-                                        * Referenced by: '<S2>/PosYLeft'
+                                        * Referenced by: '<S8>/PosYLeft'
                                         */
   real_T u_VSP1_P1;                    /* Expression: width
-                                        * Referenced by: '<S2>/u_VSP1'
+                                        * Referenced by: '<S8>/u_VSP1'
                                         */
   real_T u_VSP1_P2;                    /* Expression: dtype
-                                        * Referenced by: '<S2>/u_VSP1'
+                                        * Referenced by: '<S8>/u_VSP1'
                                         */
   real_T u_VSP1_P3;                    /* Expression: portnum
-                                        * Referenced by: '<S2>/u_VSP1'
+                                        * Referenced by: '<S8>/u_VSP1'
                                         */
   real_T u_VSP1_P4;                    /* Expression: stime
-                                        * Referenced by: '<S2>/u_VSP1'
+                                        * Referenced by: '<S8>/u_VSP1'
                                         */
   real_T u_VSP1_P5;                    /* Expression: stype
-                                        * Referenced by: '<S2>/u_VSP1'
+                                        * Referenced by: '<S8>/u_VSP1'
                                         */
   real_T u_VSP1_P6;                    /* Expression: btype
-                                        * Referenced by: '<S2>/u_VSP1'
+                                        * Referenced by: '<S8>/u_VSP1'
                                         */
   real_T alpha_VSP1_P1;                /* Expression: width
-                                        * Referenced by: '<S2>/alpha_VSP1'
+                                        * Referenced by: '<S8>/alpha_VSP1'
                                         */
   real_T alpha_VSP1_P2;                /* Expression: dtype
-                                        * Referenced by: '<S2>/alpha_VSP1'
+                                        * Referenced by: '<S8>/alpha_VSP1'
                                         */
   real_T alpha_VSP1_P3;                /* Expression: portnum
-                                        * Referenced by: '<S2>/alpha_VSP1'
+                                        * Referenced by: '<S8>/alpha_VSP1'
                                         */
   real_T alpha_VSP1_P4;                /* Expression: stime
-                                        * Referenced by: '<S2>/alpha_VSP1'
+                                        * Referenced by: '<S8>/alpha_VSP1'
                                         */
   real_T alpha_VSP1_P5;                /* Expression: stype
-                                        * Referenced by: '<S2>/alpha_VSP1'
+                                        * Referenced by: '<S8>/alpha_VSP1'
                                         */
   real_T alpha_VSP1_P6;                /* Expression: btype
-                                        * Referenced by: '<S2>/alpha_VSP1'
+                                        * Referenced by: '<S8>/alpha_VSP1'
                                         */
   real_T PosXRight_P1;                 /* Expression: width
-                                        * Referenced by: '<S2>/PosXRight'
+                                        * Referenced by: '<S8>/PosXRight'
                                         */
   real_T PosXRight_P2;                 /* Expression: dtype
-                                        * Referenced by: '<S2>/PosXRight'
+                                        * Referenced by: '<S8>/PosXRight'
                                         */
   real_T PosXRight_P3;                 /* Expression: portnum
-                                        * Referenced by: '<S2>/PosXRight'
+                                        * Referenced by: '<S8>/PosXRight'
                                         */
   real_T PosXRight_P4;                 /* Expression: stime
-                                        * Referenced by: '<S2>/PosXRight'
+                                        * Referenced by: '<S8>/PosXRight'
                                         */
   real_T PosXRight_P5;                 /* Expression: stype
-                                        * Referenced by: '<S2>/PosXRight'
+                                        * Referenced by: '<S8>/PosXRight'
                                         */
   real_T PosXRight_P6;                 /* Expression: btype
-                                        * Referenced by: '<S2>/PosXRight'
+                                        * Referenced by: '<S8>/PosXRight'
                                         */
   real_T PosYRight_P1;                 /* Expression: width
-                                        * Referenced by: '<S2>/PosYRight'
+                                        * Referenced by: '<S8>/PosYRight'
                                         */
   real_T PosYRight_P2;                 /* Expression: dtype
-                                        * Referenced by: '<S2>/PosYRight'
+                                        * Referenced by: '<S8>/PosYRight'
                                         */
   real_T PosYRight_P3;                 /* Expression: portnum
-                                        * Referenced by: '<S2>/PosYRight'
+                                        * Referenced by: '<S8>/PosYRight'
                                         */
   real_T PosYRight_P4;                 /* Expression: stime
-                                        * Referenced by: '<S2>/PosYRight'
+                                        * Referenced by: '<S8>/PosYRight'
                                         */
   real_T PosYRight_P5;                 /* Expression: stype
-                                        * Referenced by: '<S2>/PosYRight'
+                                        * Referenced by: '<S8>/PosYRight'
                                         */
   real_T PosYRight_P6;                 /* Expression: btype
-                                        * Referenced by: '<S2>/PosYRight'
+                                        * Referenced by: '<S8>/PosYRight'
                                         */
   real_T ArrowUp_P1;                   /* Expression: width
-                                        * Referenced by: '<S2>/ArrowUp'
+                                        * Referenced by: '<S8>/ArrowUp'
                                         */
   real_T ArrowUp_P2;                   /* Expression: dtype
-                                        * Referenced by: '<S2>/ArrowUp'
+                                        * Referenced by: '<S8>/ArrowUp'
                                         */
   real_T ArrowUp_P3;                   /* Expression: portnum
-                                        * Referenced by: '<S2>/ArrowUp'
+                                        * Referenced by: '<S8>/ArrowUp'
                                         */
   real_T ArrowUp_P4;                   /* Expression: stime
-                                        * Referenced by: '<S2>/ArrowUp'
+                                        * Referenced by: '<S8>/ArrowUp'
                                         */
   real_T ArrowUp_P5;                   /* Expression: stype
-                                        * Referenced by: '<S2>/ArrowUp'
+                                        * Referenced by: '<S8>/ArrowUp'
                                         */
   real_T ArrowUp_P6;                   /* Expression: btype
-                                        * Referenced by: '<S2>/ArrowUp'
+                                        * Referenced by: '<S8>/ArrowUp'
                                         */
   real_T ArrowDown_P1;                 /* Expression: width
-                                        * Referenced by: '<S2>/ArrowDown'
+                                        * Referenced by: '<S8>/ArrowDown'
                                         */
   real_T ArrowDown_P2;                 /* Expression: dtype
-                                        * Referenced by: '<S2>/ArrowDown'
+                                        * Referenced by: '<S8>/ArrowDown'
                                         */
   real_T ArrowDown_P3;                 /* Expression: portnum
-                                        * Referenced by: '<S2>/ArrowDown'
+                                        * Referenced by: '<S8>/ArrowDown'
                                         */
   real_T ArrowDown_P4;                 /* Expression: stime
-                                        * Referenced by: '<S2>/ArrowDown'
+                                        * Referenced by: '<S8>/ArrowDown'
                                         */
   real_T ArrowDown_P5;                 /* Expression: stype
-                                        * Referenced by: '<S2>/ArrowDown'
+                                        * Referenced by: '<S8>/ArrowDown'
                                         */
   real_T ArrowDown_P6;                 /* Expression: btype
-                                        * Referenced by: '<S2>/ArrowDown'
+                                        * Referenced by: '<S8>/ArrowDown'
                                         */
   real_T Integrator_IC;                /* Expression: 0
-                                        * Referenced by: '<S2>/Integrator'
+                                        * Referenced by: '<S8>/Integrator'
                                         */
   real_T Memory_X0;                    /* Expression: 0
-                                        * Referenced by: '<S2>/Memory'
+                                        * Referenced by: '<S8>/Memory'
                                         */
   real_T omega_VSP1_P1;                /* Expression: width
-                                        * Referenced by: '<S2>/omega_VSP1'
+                                        * Referenced by: '<S8>/omega_VSP1'
                                         */
   real_T omega_VSP1_P2;                /* Expression: dtype
-                                        * Referenced by: '<S2>/omega_VSP1'
+                                        * Referenced by: '<S8>/omega_VSP1'
                                         */
   real_T omega_VSP1_P3;                /* Expression: portnum
-                                        * Referenced by: '<S2>/omega_VSP1'
+                                        * Referenced by: '<S8>/omega_VSP1'
                                         */
   real_T omega_VSP1_P4;                /* Expression: stime
-                                        * Referenced by: '<S2>/omega_VSP1'
+                                        * Referenced by: '<S8>/omega_VSP1'
                                         */
   real_T omega_VSP1_P5;                /* Expression: stype
-                                        * Referenced by: '<S2>/omega_VSP1'
+                                        * Referenced by: '<S8>/omega_VSP1'
                                         */
   real_T omega_VSP1_P6;                /* Expression: btype
-                                        * Referenced by: '<S2>/omega_VSP1'
+                                        * Referenced by: '<S8>/omega_VSP1'
                                         */
   real_T R2_continuous_P1;             /* Expression: width
-                                        * Referenced by: '<S2>/R2_continuous'
+                                        * Referenced by: '<S8>/R2_continuous'
                                         */
   real_T R2_continuous_P2;             /* Expression: dtype
-                                        * Referenced by: '<S2>/R2_continuous'
+                                        * Referenced by: '<S8>/R2_continuous'
                                         */
   real_T R2_continuous_P3;             /* Expression: portnum
-                                        * Referenced by: '<S2>/R2_continuous'
+                                        * Referenced by: '<S8>/R2_continuous'
                                         */
   real_T R2_continuous_P4;             /* Expression: stime
-                                        * Referenced by: '<S2>/R2_continuous'
+                                        * Referenced by: '<S8>/R2_continuous'
                                         */
   real_T R2_continuous_P5;             /* Expression: stype
-                                        * Referenced by: '<S2>/R2_continuous'
+                                        * Referenced by: '<S8>/R2_continuous'
                                         */
   real_T R2_continuous_P6;             /* Expression: btype
-                                        * Referenced by: '<S2>/R2_continuous'
+                                        * Referenced by: '<S8>/R2_continuous'
                                         */
   real_T omega_VSP2_P1;                /* Expression: width
-                                        * Referenced by: '<S2>/omega_VSP2'
+                                        * Referenced by: '<S8>/omega_VSP2'
                                         */
   real_T omega_VSP2_P2;                /* Expression: dtype
-                                        * Referenced by: '<S2>/omega_VSP2'
+                                        * Referenced by: '<S8>/omega_VSP2'
                                         */
   real_T omega_VSP2_P3;                /* Expression: portnum
-                                        * Referenced by: '<S2>/omega_VSP2'
+                                        * Referenced by: '<S8>/omega_VSP2'
                                         */
   real_T omega_VSP2_P4;                /* Expression: stime
-                                        * Referenced by: '<S2>/omega_VSP2'
+                                        * Referenced by: '<S8>/omega_VSP2'
                                         */
   real_T omega_VSP2_P5;                /* Expression: stype
-                                        * Referenced by: '<S2>/omega_VSP2'
+                                        * Referenced by: '<S8>/omega_VSP2'
                                         */
   real_T omega_VSP2_P6;                /* Expression: btype
-                                        * Referenced by: '<S2>/omega_VSP2'
+                                        * Referenced by: '<S8>/omega_VSP2'
                                         */
   real_T u_BT_P1;                      /* Expression: width
-                                        * Referenced by: '<S2>/u_BT'
+                                        * Referenced by: '<S8>/u_BT'
                                         */
   real_T u_BT_P2;                      /* Expression: dtype
-                                        * Referenced by: '<S2>/u_BT'
+                                        * Referenced by: '<S8>/u_BT'
                                         */
   real_T u_BT_P3;                      /* Expression: portnum
-                                        * Referenced by: '<S2>/u_BT'
+                                        * Referenced by: '<S8>/u_BT'
                                         */
   real_T u_BT_P4;                      /* Expression: stime
-                                        * Referenced by: '<S2>/u_BT'
+                                        * Referenced by: '<S8>/u_BT'
                                         */
   real_T u_BT_P5;                      /* Expression: stype
-                                        * Referenced by: '<S2>/u_BT'
+                                        * Referenced by: '<S8>/u_BT'
                                         */
   real_T u_BT_P6;                      /* Expression: btype
-                                        * Referenced by: '<S2>/u_BT'
+                                        * Referenced by: '<S8>/u_BT'
                                         */
   real_T alpha_VSP2_P1;                /* Expression: width
-                                        * Referenced by: '<S2>/alpha_VSP2'
+                                        * Referenced by: '<S8>/alpha_VSP2'
                                         */
   real_T alpha_VSP2_P2;                /* Expression: dtype
-                                        * Referenced by: '<S2>/alpha_VSP2'
+                                        * Referenced by: '<S8>/alpha_VSP2'
                                         */
   real_T alpha_VSP2_P3;                /* Expression: portnum
-                                        * Referenced by: '<S2>/alpha_VSP2'
+                                        * Referenced by: '<S8>/alpha_VSP2'
                                         */
   real_T alpha_VSP2_P4;                /* Expression: stime
-                                        * Referenced by: '<S2>/alpha_VSP2'
+                                        * Referenced by: '<S8>/alpha_VSP2'
                                         */
   real_T alpha_VSP2_P5;                /* Expression: stype
-                                        * Referenced by: '<S2>/alpha_VSP2'
+                                        * Referenced by: '<S8>/alpha_VSP2'
                                         */
   real_T alpha_VSP2_P6;                /* Expression: btype
-                                        * Referenced by: '<S2>/alpha_VSP2'
+                                        * Referenced by: '<S8>/alpha_VSP2'
                                         */
   real_T u_VSP2_P1;                    /* Expression: width
-                                        * Referenced by: '<S2>/u_VSP2'
+                                        * Referenced by: '<S8>/u_VSP2'
                                         */
   real_T u_VSP2_P2;                    /* Expression: dtype
-                                        * Referenced by: '<S2>/u_VSP2'
+                                        * Referenced by: '<S8>/u_VSP2'
                                         */
   real_T u_VSP2_P3;                    /* Expression: portnum
-                                        * Referenced by: '<S2>/u_VSP2'
+                                        * Referenced by: '<S8>/u_VSP2'
                                         */
   real_T u_VSP2_P4;                    /* Expression: stime
-                                        * Referenced by: '<S2>/u_VSP2'
+                                        * Referenced by: '<S8>/u_VSP2'
                                         */
   real_T u_VSP2_P5;                    /* Expression: stype
-                                        * Referenced by: '<S2>/u_VSP2'
+                                        * Referenced by: '<S8>/u_VSP2'
                                         */
   real_T u_VSP2_P6;                    /* Expression: btype
-                                        * Referenced by: '<S2>/u_VSP2'
+                                        * Referenced by: '<S8>/u_VSP2'
                                         */
   real_T L1_P1;                        /* Expression: width
-                                        * Referenced by: '<S2>/L1'
+                                        * Referenced by: '<S8>/L1'
                                         */
   real_T L1_P2;                        /* Expression: dtype
-                                        * Referenced by: '<S2>/L1'
+                                        * Referenced by: '<S8>/L1'
                                         */
   real_T L1_P3;                        /* Expression: portnum
-                                        * Referenced by: '<S2>/L1'
+                                        * Referenced by: '<S8>/L1'
                                         */
   real_T L1_P4;                        /* Expression: stime
-                                        * Referenced by: '<S2>/L1'
+                                        * Referenced by: '<S8>/L1'
                                         */
   real_T L1_P5;                        /* Expression: stype
-                                        * Referenced by: '<S2>/L1'
+                                        * Referenced by: '<S8>/L1'
                                         */
   real_T L1_P6;                        /* Expression: btype
-                                        * Referenced by: '<S2>/L1'
+                                        * Referenced by: '<S8>/L1'
                                         */
   real_T R1_P1;                        /* Expression: width
-                                        * Referenced by: '<S2>/R1'
+                                        * Referenced by: '<S8>/R1'
                                         */
   real_T R1_P2;                        /* Expression: dtype
-                                        * Referenced by: '<S2>/R1'
+                                        * Referenced by: '<S8>/R1'
                                         */
   real_T R1_P3;                        /* Expression: portnum
-                                        * Referenced by: '<S2>/R1'
+                                        * Referenced by: '<S8>/R1'
                                         */
   real_T R1_P4;                        /* Expression: stime
-                                        * Referenced by: '<S2>/R1'
+                                        * Referenced by: '<S8>/R1'
                                         */
   real_T R1_P5;                        /* Expression: stype
-                                        * Referenced by: '<S2>/R1'
+                                        * Referenced by: '<S8>/R1'
                                         */
   real_T R1_P6;                        /* Expression: btype
-                                        * Referenced by: '<S2>/R1'
+                                        * Referenced by: '<S8>/R1'
                                         */
   real_T ArrowLeft_P1;                 /* Expression: width
-                                        * Referenced by: '<S2>/ArrowLeft'
+                                        * Referenced by: '<S8>/ArrowLeft'
                                         */
   real_T ArrowLeft_P2;                 /* Expression: dtype
-                                        * Referenced by: '<S2>/ArrowLeft'
+                                        * Referenced by: '<S8>/ArrowLeft'
                                         */
   real_T ArrowLeft_P3;                 /* Expression: portnum
-                                        * Referenced by: '<S2>/ArrowLeft'
+                                        * Referenced by: '<S8>/ArrowLeft'
                                         */
   real_T ArrowLeft_P4;                 /* Expression: stime
-                                        * Referenced by: '<S2>/ArrowLeft'
+                                        * Referenced by: '<S8>/ArrowLeft'
                                         */
   real_T ArrowLeft_P5;                 /* Expression: stype
-                                        * Referenced by: '<S2>/ArrowLeft'
+                                        * Referenced by: '<S8>/ArrowLeft'
                                         */
   real_T ArrowLeft_P6;                 /* Expression: btype
-                                        * Referenced by: '<S2>/ArrowLeft'
+                                        * Referenced by: '<S8>/ArrowLeft'
                                         */
   real_T ArrowRight_P1;                /* Expression: width
-                                        * Referenced by: '<S2>/ArrowRight'
+                                        * Referenced by: '<S8>/ArrowRight'
                                         */
   real_T ArrowRight_P2;                /* Expression: dtype
-                                        * Referenced by: '<S2>/ArrowRight'
+                                        * Referenced by: '<S8>/ArrowRight'
                                         */
   real_T ArrowRight_P3;                /* Expression: portnum
-                                        * Referenced by: '<S2>/ArrowRight'
+                                        * Referenced by: '<S8>/ArrowRight'
                                         */
   real_T ArrowRight_P4;                /* Expression: stime
-                                        * Referenced by: '<S2>/ArrowRight'
+                                        * Referenced by: '<S8>/ArrowRight'
                                         */
   real_T ArrowRight_P5;                /* Expression: stype
-                                        * Referenced by: '<S2>/ArrowRight'
+                                        * Referenced by: '<S8>/ArrowRight'
                                         */
   real_T ArrowRight_P6;                /* Expression: btype
-                                        * Referenced by: '<S2>/ArrowRight'
+                                        * Referenced by: '<S8>/ArrowRight'
+                                        */
+  real_T Stepsize_Value;               /* Expression: 0.01
+                                        * Referenced by: '<S5>/Step size'
+                                        */
+  real_T counter_X0;                   /* Expression: 0
+                                        * Referenced by: '<S10>/counter'
+                                        */
+  real_T WhiteNoise_Mean;              /* Expression: 0
+                                        * Referenced by: '<S16>/White Noise'
+                                        */
+  real_T WhiteNoise_StdDev;            /* Computed Parameter: WhiteNoise_StdDev
+                                        * Referenced by: '<S16>/White Noise'
+                                        */
+  real_T WhiteNoise_Seed;              /* Expression: 9024
+                                        * Referenced by: '<S16>/White Noise'
+                                        */
+  real_T WhiteNoise_Mean_h;            /* Expression: 0
+                                        * Referenced by: '<S17>/White Noise'
+                                        */
+  real_T WhiteNoise_StdDev_d;          /* Computed Parameter: WhiteNoise_StdDev_d
+                                        * Referenced by: '<S17>/White Noise'
+                                        */
+  real_T WhiteNoise_Seed_b;            /* Expression: 123
+                                        * Referenced by: '<S17>/White Noise'
+                                        */
+  real_T WhiteNoise_Mean_f;            /* Expression: 0
+                                        * Referenced by: '<S15>/White Noise'
+                                        */
+  real_T WhiteNoise_StdDev_g;          /* Computed Parameter: WhiteNoise_StdDev_g
+                                        * Referenced by: '<S15>/White Noise'
+                                        */
+  real_T WhiteNoise_Seed_l;            /* Expression: 9025
+                                        * Referenced by: '<S15>/White Noise'
+                                        */
+  real_T Hold_X0;                      /* Expression: 0
+                                        * Referenced by: '<S11>/Hold'
+                                        */
+  real_T Integrator4_IC;               /* Expression: 0
+                                        * Referenced by: '<Root>/Integrator4'
+                                        */
+  real_T Memory2_X0[10];               /* Expression: [0,0,0,0,0,0,0,0,0,0]
+                                        * Referenced by: '<Root>/Memory2'
+                                        */
+  real_T Memory1_X0[10];               /* Expression: [0,0,0,0,0,0,0,0,0,0]
+                                        * Referenced by: '<Root>/Memory1'
+                                        */
+  real_T Memory3_X0;                   /* Expression: 0
+                                        * Referenced by: '<Root>/Memory3'
                                         */
   real_T X_d_P1;                       /* Expression: width
-                                        * Referenced by: '<S3>/X_d'
+                                        * Referenced by: '<S9>/X_d'
                                         */
   real_T X_d_P2;                       /* Expression: dtype
-                                        * Referenced by: '<S3>/X_d'
+                                        * Referenced by: '<S9>/X_d'
                                         */
   real_T X_d_P3;                       /* Expression: portnum
-                                        * Referenced by: '<S3>/X_d'
+                                        * Referenced by: '<S9>/X_d'
                                         */
   real_T X_d_P4;                       /* Expression: stime
-                                        * Referenced by: '<S3>/X_d'
+                                        * Referenced by: '<S9>/X_d'
                                         */
   real_T X_d_P5;                       /* Expression: stype
-                                        * Referenced by: '<S3>/X_d'
+                                        * Referenced by: '<S9>/X_d'
                                         */
   real_T X_d_P6;                       /* Expression: btype
-                                        * Referenced by: '<S3>/X_d'
+                                        * Referenced by: '<S9>/X_d'
                                         */
   real_T N_d_P1;                       /* Expression: width
-                                        * Referenced by: '<S3>/N_d'
+                                        * Referenced by: '<S9>/N_d'
                                         */
   real_T N_d_P2;                       /* Expression: dtype
-                                        * Referenced by: '<S3>/N_d'
+                                        * Referenced by: '<S9>/N_d'
                                         */
   real_T N_d_P3;                       /* Expression: portnum
-                                        * Referenced by: '<S3>/N_d'
+                                        * Referenced by: '<S9>/N_d'
                                         */
   real_T N_d_P4;                       /* Expression: stime
-                                        * Referenced by: '<S3>/N_d'
+                                        * Referenced by: '<S9>/N_d'
                                         */
   real_T N_d_P5;                       /* Expression: stype
-                                        * Referenced by: '<S3>/N_d'
+                                        * Referenced by: '<S9>/N_d'
                                         */
   real_T N_d_P6;                       /* Expression: btype
-                                        * Referenced by: '<S3>/N_d'
+                                        * Referenced by: '<S9>/N_d'
                                         */
   real_T Y_d_P1;                       /* Expression: width
-                                        * Referenced by: '<S3>/Y_d'
+                                        * Referenced by: '<S9>/Y_d'
                                         */
   real_T Y_d_P2;                       /* Expression: dtype
-                                        * Referenced by: '<S3>/Y_d'
+                                        * Referenced by: '<S9>/Y_d'
                                         */
   real_T Y_d_P3;                       /* Expression: portnum
-                                        * Referenced by: '<S3>/Y_d'
+                                        * Referenced by: '<S9>/Y_d'
                                         */
   real_T Y_d_P4;                       /* Expression: stime
-                                        * Referenced by: '<S3>/Y_d'
+                                        * Referenced by: '<S9>/Y_d'
                                         */
   real_T Y_d_P5;                       /* Expression: stype
-                                        * Referenced by: '<S3>/Y_d'
+                                        * Referenced by: '<S9>/Y_d'
                                         */
   real_T Y_d_P6;                       /* Expression: btype
-                                        * Referenced by: '<S3>/Y_d'
+                                        * Referenced by: '<S9>/Y_d'
                                         */
   real_T Constant2_Value;              /* Expression: 0
-                                        * Referenced by: '<S3>/Constant2'
+                                        * Referenced by: '<S9>/Constant2'
                                         */
   real_T psi_0_P1;                     /* Expression: width
-                                        * Referenced by: '<S3>/psi_0 '
+                                        * Referenced by: '<S9>/psi_0 '
                                         */
   real_T psi_0_P2;                     /* Expression: dtype
-                                        * Referenced by: '<S3>/psi_0 '
+                                        * Referenced by: '<S9>/psi_0 '
                                         */
   real_T psi_0_P3;                     /* Expression: portnum
-                                        * Referenced by: '<S3>/psi_0 '
+                                        * Referenced by: '<S9>/psi_0 '
                                         */
   real_T psi_0_P4;                     /* Expression: stime
-                                        * Referenced by: '<S3>/psi_0 '
+                                        * Referenced by: '<S9>/psi_0 '
                                         */
   real_T psi_0_P5;                     /* Expression: stype
-                                        * Referenced by: '<S3>/psi_0 '
+                                        * Referenced by: '<S9>/psi_0 '
                                         */
   real_T psi_0_P6;                     /* Expression: btype
-                                        * Referenced by: '<S3>/psi_0 '
+                                        * Referenced by: '<S9>/psi_0 '
                                         */
   real_T Constant_Value;               /* Expression: 0
-                                        * Referenced by: '<S3>/Constant'
+                                        * Referenced by: '<S9>/Constant'
                                         */
   real_T x_0_P1;                       /* Expression: width
-                                        * Referenced by: '<S3>/x_0'
+                                        * Referenced by: '<S9>/x_0'
                                         */
   real_T x_0_P2;                       /* Expression: dtype
-                                        * Referenced by: '<S3>/x_0'
+                                        * Referenced by: '<S9>/x_0'
                                         */
   real_T x_0_P3;                       /* Expression: portnum
-                                        * Referenced by: '<S3>/x_0'
+                                        * Referenced by: '<S9>/x_0'
                                         */
   real_T x_0_P4;                       /* Expression: stime
-                                        * Referenced by: '<S3>/x_0'
+                                        * Referenced by: '<S9>/x_0'
                                         */
   real_T x_0_P5;                       /* Expression: stype
-                                        * Referenced by: '<S3>/x_0'
+                                        * Referenced by: '<S9>/x_0'
                                         */
   real_T x_0_P6;                       /* Expression: btype
-                                        * Referenced by: '<S3>/x_0'
+                                        * Referenced by: '<S9>/x_0'
                                         */
   real_T Constant1_Value;              /* Expression: 0
-                                        * Referenced by: '<S3>/Constant1'
+                                        * Referenced by: '<S9>/Constant1'
                                         */
   real_T y_0_P1;                       /* Expression: width
-                                        * Referenced by: '<S3>/y_0'
+                                        * Referenced by: '<S9>/y_0'
                                         */
   real_T y_0_P2;                       /* Expression: dtype
-                                        * Referenced by: '<S3>/y_0'
+                                        * Referenced by: '<S9>/y_0'
                                         */
   real_T y_0_P3;                       /* Expression: portnum
-                                        * Referenced by: '<S3>/y_0'
+                                        * Referenced by: '<S9>/y_0'
                                         */
   real_T y_0_P4;                       /* Expression: stime
-                                        * Referenced by: '<S3>/y_0'
+                                        * Referenced by: '<S9>/y_0'
                                         */
   real_T y_0_P5;                       /* Expression: stype
-                                        * Referenced by: '<S3>/y_0'
+                                        * Referenced by: '<S9>/y_0'
                                         */
   real_T y_0_P6;                       /* Expression: btype
-                                        * Referenced by: '<S3>/y_0'
+                                        * Referenced by: '<S9>/y_0'
                                         */
   real_T integratorresetmodel_P1;      /* Expression: width
-                                        * Referenced by: '<S3>/integrator reset model'
+                                        * Referenced by: '<S9>/integrator reset model'
                                         */
   real_T integratorresetmodel_P2;      /* Expression: dtype
-                                        * Referenced by: '<S3>/integrator reset model'
+                                        * Referenced by: '<S9>/integrator reset model'
                                         */
   real_T integratorresetmodel_P3;      /* Expression: portnum
-                                        * Referenced by: '<S3>/integrator reset model'
+                                        * Referenced by: '<S9>/integrator reset model'
                                         */
   real_T integratorresetmodel_P4;      /* Expression: stime
-                                        * Referenced by: '<S3>/integrator reset model'
+                                        * Referenced by: '<S9>/integrator reset model'
                                         */
   real_T integratorresetmodel_P5;      /* Expression: stype
-                                        * Referenced by: '<S3>/integrator reset model'
+                                        * Referenced by: '<S9>/integrator reset model'
                                         */
   real_T integratorresetmodel_P6;      /* Expression: btype
-                                        * Referenced by: '<S3>/integrator reset model'
+                                        * Referenced by: '<S9>/integrator reset model'
+                                        */
+  real_T k_psi0_P1;                    /* Expression: width
+                                        * Referenced by: '<Root>/k_psi0'
+                                        */
+  real_T k_psi0_P2;                    /* Expression: dtype
+                                        * Referenced by: '<Root>/k_psi0'
+                                        */
+  real_T k_psi0_P3;                    /* Expression: portnum
+                                        * Referenced by: '<Root>/k_psi0'
+                                        */
+  real_T k_psi0_P4;                    /* Expression: stime
+                                        * Referenced by: '<Root>/k_psi0'
+                                        */
+  real_T k_psi0_P5;                    /* Expression: stype
+                                        * Referenced by: '<Root>/k_psi0'
+                                        */
+  real_T k_psi0_P6;                    /* Expression: btype
+                                        * Referenced by: '<Root>/k_psi0'
+                                        */
+  real_T Memory_X0_n;                  /* Expression: 0
+                                        * Referenced by: '<Root>/Memory'
+                                        */
+  real_T Integrator_IC_a;              /* Expression: 0
+                                        * Referenced by: '<Root>/Integrator'
+                                        */
+  real_T Integrator3_IC;               /* Expression: 0
+                                        * Referenced by: '<Root>/Integrator3'
+                                        */
+  real_T Step_Time;                    /* Expression: 1
+                                        * Referenced by: '<Root>/Step'
+                                        */
+  real_T Step_Y0;                      /* Expression: 0
+                                        * Referenced by: '<Root>/Step'
+                                        */
+  real_T Step_YFinal;                  /* Expression: 1
+                                        * Referenced by: '<Root>/Step'
+                                        */
+  real_T Step1_Time;                   /* Expression: 3
+                                        * Referenced by: '<Root>/Step1'
+                                        */
+  real_T Step1_Y0;                     /* Expression: 0
+                                        * Referenced by: '<Root>/Step1'
+                                        */
+  real_T Step1_YFinal;                 /* Expression: -1
+                                        * Referenced by: '<Root>/Step1'
                                         */
   real_T Constant_Value_l;             /* Expression: 1
-                                        * Referenced by: '<S2>/Constant'
+                                        * Referenced by: '<S8>/Constant'
                                         */
   real_T NIVeriStandSignalProbe_P1;    /* Expression: 1
                                         * Referenced by: '<Root>/NIVeriStandSignalProbe'
@@ -1633,8 +1722,8 @@ struct tag_RTM_ctrl_student_HIL_T {
     boolean_T zCCacheNeedsReset;
     boolean_T derivCacheNeedsReset;
     boolean_T blkStateChange;
-    real_T odeY[1];
-    real_T odeF[4][1];
+    real_T odeY[4];
+    real_T odeF[4][4];
     ODE4_IntgData intgData;
     void *dwork;
   } ModelData;
@@ -1762,21 +1851,27 @@ extern RT_MODEL_ctrl_student_HIL_T *const ctrl_student_HIL_M;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'ctrl_student_HIL'
- * '<S1>'   : 'ctrl_student_HIL/Noise generator'
- * '<S2>'   : 'ctrl_student_HIL/joystick'
- * '<S3>'   : 'ctrl_student_HIL/tau to CSE mocell (only use for HIL testing)'
- * '<S4>'   : 'ctrl_student_HIL/Noise generator/Downsample	signal'
- * '<S5>'   : 'ctrl_student_HIL/Noise generator/Sample & hold'
- * '<S6>'   : 'ctrl_student_HIL/Noise generator/noise generator'
- * '<S7>'   : 'ctrl_student_HIL/Noise generator/Downsample	signal/MATLAB Function'
- * '<S8>'   : 'ctrl_student_HIL/Noise generator/Sample & hold/MATLAB Function1'
- * '<S9>'   : 'ctrl_student_HIL/Noise generator/noise generator/Band-limited white noise psi'
- * '<S10>'  : 'ctrl_student_HIL/Noise generator/noise generator/Band-limited white noise x'
- * '<S11>'  : 'ctrl_student_HIL/Noise generator/noise generator/Band-limited white noise y'
- * '<S12>'  : 'ctrl_student_HIL/joystick/MATLAB Function'
- * '<S13>'  : 'ctrl_student_HIL/joystick/MATLAB Function1'
- * '<S14>'  : 'ctrl_student_HIL/joystick/Voith Schneider Propeller'
- * '<S15>'  : 'ctrl_student_HIL/joystick/bow thruster'
+ * '<S1>'   : 'ctrl_student_HIL/ Integral'
+ * '<S2>'   : 'ctrl_student_HIL/MATLAB Function'
+ * '<S3>'   : 'ctrl_student_HIL/MATLAB Function1'
+ * '<S4>'   : 'ctrl_student_HIL/MATLAB Function2'
+ * '<S5>'   : 'ctrl_student_HIL/Noise generator'
+ * '<S6>'   : 'ctrl_student_HIL/Proportional'
+ * '<S7>'   : 'ctrl_student_HIL/Tank Limits'
+ * '<S8>'   : 'ctrl_student_HIL/joystick'
+ * '<S9>'   : 'ctrl_student_HIL/tau to CSE mocell (only use for HIL testing)'
+ * '<S10>'  : 'ctrl_student_HIL/Noise generator/Downsample	signal'
+ * '<S11>'  : 'ctrl_student_HIL/Noise generator/Sample & hold'
+ * '<S12>'  : 'ctrl_student_HIL/Noise generator/noise generator'
+ * '<S13>'  : 'ctrl_student_HIL/Noise generator/Downsample	signal/MATLAB Function'
+ * '<S14>'  : 'ctrl_student_HIL/Noise generator/Sample & hold/MATLAB Function1'
+ * '<S15>'  : 'ctrl_student_HIL/Noise generator/noise generator/Band-limited white noise psi'
+ * '<S16>'  : 'ctrl_student_HIL/Noise generator/noise generator/Band-limited white noise x'
+ * '<S17>'  : 'ctrl_student_HIL/Noise generator/noise generator/Band-limited white noise y'
+ * '<S18>'  : 'ctrl_student_HIL/joystick/Bow thruster'
+ * '<S19>'  : 'ctrl_student_HIL/joystick/MATLAB Function'
+ * '<S20>'  : 'ctrl_student_HIL/joystick/MATLAB Function1'
+ * '<S21>'  : 'ctrl_student_HIL/joystick/Voith Schneider Propeller'
  */
 #endif                                 /* RTW_HEADER_ctrl_student_HIL_h_ */
 

@@ -17,6 +17,7 @@
 <inport> id="-1"  name = "joystick/R1" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/ArrowLeft" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/ArrowRight" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "k_psi0" width = "1" datatype = "0"</inport>
 <outport> id = "-1" name = "joystick/u_VSP1" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/alpha_VSP1" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/omega_VSP1" width = "1" datatype = "0"</outport>

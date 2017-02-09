@@ -18,15 +18,70 @@
 <signal> id = "17" name = "ctrl_student_hil/joystick/R1" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
 <signal> id = "18" name = "ctrl_student_hil/joystick/ArrowLeft" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
 <signal> id = "19" name = "ctrl_student_hil/joystick/ArrowRight" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "20" name = "ctrl_student_hil/joystick/bow thruster" SignalName ="u_BT" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "21" name = "ctrl_student_hil/joystick/Voith Schneider Propeller" SignalName ="Omega1" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "22" name = "ctrl_student_hil/joystick/Voith Schneider Propeller" SignalName ="Omega2" PortNum ="2" width = "1" datatype = "real_T"</signal>
-<signal> id = "23" name = "ctrl_student_hil/joystick/MATLAB Function1" SignalName ="u_VSP" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "24" name = "ctrl_student_hil/joystick/MATLAB Function1" SignalName ="a_VSP" PortNum ="2" width = "1" datatype = "real_T"</signal>
-<signal> id = "25" name = "ctrl_student_hil/joystick/MATLAB Function" SignalName ="u" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "26" name = "ctrl_student_hil/joystick/MATLAB Function" SignalName ="a" PortNum ="2" width = "1" datatype = "real_T"</signal>
-<signal> id = "27" name = "ctrl_student_hil/Noise generator/Sample & hold/MATLAB Function1" SignalName ="output(1,1)" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "28" name = "ctrl_student_hil/Noise generator/Sample & hold/MATLAB Function1" SignalName ="output(1,2)" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "29" name = "ctrl_student_hil/Noise generator/Sample & hold/MATLAB Function1" SignalName ="output(1,3)" PortNum ="1" width = "1" datatype = "real_T"</signal>
-<signal> id = "30" name = "ctrl_student_hil/Noise generator/Downsamplesignal/MATLAB Function" SignalName ="count" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "20" name = "ctrl_student_hil/Noise generator/noise generator/Band-limited white noise x/Product" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "21" name = "ctrl_student_hil/Noise generator/noise generator/Band-limited white noise y/Product" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "22" name = "ctrl_student_hil/Noise generator/noise generator/Band-limited white noise psi/Product" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "23" name = "ctrl_student_hil/Noise generator/Sample & hold/Hold" SignalName ="(1,1)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "24" name = "ctrl_student_hil/Noise generator/Sample & hold/Hold" SignalName ="(1,2)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "25" name = "ctrl_student_hil/Noise generator/Sample & hold/Hold" SignalName ="(1,3)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "26" name = "ctrl_student_hil/Memory2" SignalName ="(1,1)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "27" name = "ctrl_student_hil/Memory2" SignalName ="(1,2)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "28" name = "ctrl_student_hil/Memory2" SignalName ="(1,3)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "29" name = "ctrl_student_hil/Memory2" SignalName ="(1,4)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "30" name = "ctrl_student_hil/Memory2" SignalName ="(1,5)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "31" name = "ctrl_student_hil/Memory2" SignalName ="(1,6)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "32" name = "ctrl_student_hil/Memory2" SignalName ="(1,7)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "33" name = "ctrl_student_hil/Memory2" SignalName ="(1,8)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "34" name = "ctrl_student_hil/Memory2" SignalName ="(1,9)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "35" name = "ctrl_student_hil/Memory2" SignalName ="(1,10)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "36" name = "ctrl_student_hil/Memory1" SignalName ="(1,1)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "37" name = "ctrl_student_hil/Memory1" SignalName ="(1,2)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "38" name = "ctrl_student_hil/Memory1" SignalName ="(1,3)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "39" name = "ctrl_student_hil/Memory1" SignalName ="(1,4)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "40" name = "ctrl_student_hil/Memory1" SignalName ="(1,5)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "41" name = "ctrl_student_hil/Memory1" SignalName ="(1,6)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "42" name = "ctrl_student_hil/Memory1" SignalName ="(1,7)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "43" name = "ctrl_student_hil/Memory1" SignalName ="(1,8)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "44" name = "ctrl_student_hil/Memory1" SignalName ="(1,9)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "45" name = "ctrl_student_hil/Memory1" SignalName ="(1,10)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "46" name = "ctrl_student_hil/Memory3" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "47" name = "ctrl_student_hil/k_psi0" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "48" name = "ctrl_student_hil/Memory" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "49" name = "ctrl_student_hil/Integrator3" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "50" name = "ctrl_student_hil/Sum2" SignalName ="" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "51" name = "ctrl_student_hil/joystick/Voith Schneider Propeller" SignalName ="Omega1" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "52" name = "ctrl_student_hil/joystick/Voith Schneider Propeller" SignalName ="Omega2" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "53" name = "ctrl_student_hil/joystick/MATLAB Function1" SignalName ="u_VSP" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "54" name = "ctrl_student_hil/joystick/MATLAB Function1" SignalName ="a_VSP" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "55" name = "ctrl_student_hil/joystick/MATLAB Function" SignalName ="u" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "56" name = "ctrl_student_hil/joystick/MATLAB Function" SignalName ="a" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "57" name = "ctrl_student_hil/joystick/Bow thruster" SignalName ="u_BT" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "58" name = "ctrl_student_hil/Tank Limits" SignalName ="x_d1" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "59" name = "ctrl_student_hil/Tank Limits" SignalName ="M1" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "60" name = "ctrl_student_hil/Proportional" SignalName ="u_hat" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "61" name = "ctrl_student_hil/Noise generator/Sample & hold/MATLAB Function1" SignalName ="output(1,1)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "62" name = "ctrl_student_hil/Noise generator/Sample & hold/MATLAB Function1" SignalName ="output(1,2)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "63" name = "ctrl_student_hil/Noise generator/Sample & hold/MATLAB Function1" SignalName ="output(1,3)" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "64" name = "ctrl_student_hil/Noise generator/Downsamplesignal/MATLAB Function" SignalName ="count" PortNum ="1" width = "1" datatype = "real_T"</signal>
+<signal> id = "65" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,1)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "66" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,2)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "67" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,3)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "68" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,4)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "69" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,5)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "70" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,6)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "71" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,7)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "72" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,8)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "73" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,9)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "74" name = "ctrl_student_hil/MATLAB Function" SignalName ="Mx1(1,10)" PortNum ="2" width = "1" datatype = "real_T"</signal>
+<signal> id = "75" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,1)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "76" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,2)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "77" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,3)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "78" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,4)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "79" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,5)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "80" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,6)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "81" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,7)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "82" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,8)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "83" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,9)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "84" name = "ctrl_student_hil/MATLAB Function" SignalName ="My1(1,10)" PortNum ="3" width = "1" datatype = "real_T"</signal>
+<signal> id = "85" name = "ctrl_student_hil/ Integral" SignalName ="U" PortNum ="1" width = "1" datatype = "real_T"</signal>
 </signallist>

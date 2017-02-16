@@ -1,10 +1,7 @@
 	<portlist>
+<inport> id="-1"  name = "u_in" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "y_in" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "psi_in" width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "x_in" width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "r_in" width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "u_in" width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "v_in" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/L2_continuous" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/PosXLeft" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/PosYLeft" width = "1" datatype = "0"</inport>
@@ -17,7 +14,17 @@
 <inport> id="-1"  name = "joystick/R1" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/ArrowLeft" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "joystick/ArrowRight" width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "k_psi0" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "x_in" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "r_in" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "v_in" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "k_psi" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "u_dot_imu" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "enable noise" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "noise power position" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "noise power heading" width = "1" datatype = "0"</inport>
+<inport> id="-1"  name = "Desired sampling frequency" width = "1" datatype = "0"</inport>
+<outport> id = "-1" name = "u_true" width = "1" datatype = "0"</outport>
+<outport> id = "-1" name = "u_hat" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/u_VSP1" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/alpha_VSP1" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/omega_VSP1" width = "1" datatype = "0"</outport>
@@ -25,6 +32,8 @@
 <outport> id = "-1" name = "joystick/u_BT" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/alpha_VSP2" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "joystick/u_VSP2" width = "1" datatype = "0"</outport>
+<outport> id = "-1" name = "X" width = "1" datatype = "0"</outport>
+<outport> id = "-1" name = "psi_out" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/X_d" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/N_d" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/Y_d" width = "1" datatype = "0"</outport>

@@ -10,7 +10,7 @@
 				<String>CSE1</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.103</String>
+				<String>1.0.0.107</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -5197,10 +5197,10 @@
 									<Double>10000</Double>
 								</Property>
 								<Property Name="DLL Size">
-									<I32>206922</I32>
+									<I32>210394</I32>
 								</Property>
 								<Property Name="DLL Timestamp">
-									<Double>3570164796.05687</Double>
+									<Double>3570704266.2469964</Double>
 								</Property>
 								<Property Name="Decimation">
 									<I32>1</I32>
@@ -5244,7 +5244,7 @@
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\system\ctrl_student_HIL.out</RTDestination>
 										<SupportedTarget>VxWorks</SupportedTarget>
-										<MD5>8aa9a406be4edc012d7c03ca4eaba683</MD5>
+										<MD5>2d4e24b33630362e24287c38c16715d2</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
@@ -5570,7 +5570,7 @@
 											<String>x_in</String>
 										</Property>
 										<Property Name="Index">
-											<I32>15</I32>
+											<I32>18</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_tau/Outports/eta/x" />
@@ -5588,7 +5588,7 @@
 											<String>r_in</String>
 										</Property>
 										<Property Name="Index">
-											<I32>16</I32>
+											<I32>20</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_tau/Outports/nu/r" />
@@ -5624,7 +5624,7 @@
 											<String>v_in</String>
 										</Property>
 										<Property Name="Index">
-											<I32>17</I32>
+											<I32>21</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_tau/Outports/nu/v" />
@@ -5642,7 +5642,7 @@
 											<String>k_psi</String>
 										</Property>
 										<Property Name="Index">
-											<I32>18</I32>
+											<I32>22</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5657,7 +5657,7 @@
 											<String>u_dot_imu</String>
 										</Property>
 										<Property Name="Index">
-											<I32>19</I32>
+											<I32>23</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5672,7 +5672,7 @@
 											<String>enable noise</String>
 										</Property>
 										<Property Name="Index">
-											<I32>20</I32>
+											<I32>19</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5687,7 +5687,7 @@
 											<String>noise power position</String>
 										</Property>
 										<Property Name="Index">
-											<I32>21</I32>
+											<I32>16</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5702,7 +5702,7 @@
 											<String>noise power heading</String>
 										</Property>
 										<Property Name="Index">
-											<I32>22</I32>
+											<I32>17</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5717,7 +5717,7 @@
 											<String>Desired sampling frequency</String>
 										</Property>
 										<Property Name="Index">
-											<I32>23</I32>
+											<I32>15</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5741,7 +5741,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/X_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>35</I32>
+												<I32>37</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5756,7 +5756,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/N_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>36</I32>
+												<I32>38</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5771,7 +5771,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/Y_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>37</I32>
+												<I32>39</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5786,7 +5786,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/psi_0 </String>
 											</Property>
 											<Property Name="Index">
-												<I32>38</I32>
+												<I32>40</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5801,7 +5801,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/x_0</String>
 											</Property>
 											<Property Name="Index">
-												<I32>39</I32>
+												<I32>41</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5816,7 +5816,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/y_0</String>
 											</Property>
 											<Property Name="Index">
-												<I32>40</I32>
+												<I32>42</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5831,7 +5831,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/integrator reset model</String>
 											</Property>
 											<Property Name="Index">
-												<I32>41</I32>
+												<I32>43</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -6003,6 +6003,36 @@
 										</Property>
 										<Property Name="Index">
 											<I32>34</I32>
+										</Property>
+									</Properties>
+									<Errors />
+									<DefaultValue>
+										<Elem>0</Elem>
+									</DefaultValue>
+								</Channel>
+								<Channel Name="x_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+									<Description />
+									<Properties>
+										<Property Name="Model Path">
+											<String>x_m</String>
+										</Property>
+										<Property Name="Index">
+											<I32>35</I32>
+										</Property>
+									</Properties>
+									<Errors />
+									<DefaultValue>
+										<Elem>0</Elem>
+									</DefaultValue>
+								</Channel>
+								<Channel Name="fater noise" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+									<Description />
+									<Properties>
+										<Property Name="Model Path">
+											<String>fater noise</String>
+										</Property>
+										<Property Name="Index">
+											<I32>36</I32>
 										</Property>
 									</Properties>
 									<Errors />

@@ -7,9 +7,9 @@
  *
  * Code generation for model "ctrl_student_HIL".
  *
- * Model version              : 1.152
+ * Model version              : 1.154
  * Simulink Coder version : 8.8 (R2015a) 09-Feb-2015
- * C source code generated on : Thu Mar 02 13:53:10 2017
+ * C source code generated on : Thu Mar 02 15:38:31 2017
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -848,6 +848,7 @@ typedef struct {
   real_T u_dot_imu;                    /* '<Root>/u_dot_imu' */
   real_T L1_i;                         /* '<Root>/L1' */
   real_T L3;                           /* '<Root>/L3' */
+  real_T Subtract;                     /* '<Root>/Subtract' */
   real_T Int1;                         /* '<Root>/Int1' */
   real_T Integrator[9];                /* '<Root>/Integrator' */
   real_T Omega1;                       /* '<S7>/Voith Schneider Propeller' */
@@ -939,6 +940,7 @@ typedef struct {
   real_T x_0_DWORK1;                   /* '<S8>/x_0' */
   real_T y_0_DWORK1;                   /* '<S8>/y_0' */
   real_T integratorresetmodel_DWORK1;  /* '<S8>/integrator reset model' */
+  real_T xerror_DWORK1;                /* '<Root>/x-error' */
   int32_T NIVeriStandSignalProbe_DWORK2;/* '<Root>/NIVeriStandSignalProbe' */
   uint32_T RandSeed;                   /* '<S16>/White Noise' */
   uint32_T RandSeed_f;                 /* '<S17>/White Noise' */
@@ -1001,6 +1003,7 @@ typedef struct {
   uint8_T x_0_DWORK2[17];              /* '<S8>/x_0' */
   uint8_T y_0_DWORK2[17];              /* '<S8>/y_0' */
   uint8_T integratorresetmodel_DWORK2[17];/* '<S8>/integrator reset model' */
+  uint8_T xerror_DWORK2[17];           /* '<Root>/x-error' */
   uint8_T NIVeriStandSignalProbe_DWORK1[17];/* '<Root>/NIVeriStandSignalProbe' */
   uint8_T NIVeriStandSignalProbe_DWORK3[60];/* '<Root>/NIVeriStandSignalProbe' */
 } DW_ctrl_student_HIL_T;
@@ -2168,6 +2171,24 @@ struct P_ctrl_student_HIL_T_ {
                                         */
   real_T integratorresetmodel_P6;      /* Expression: btype
                                         * Referenced by: '<S8>/integrator reset model'
+                                        */
+  real_T xerror_P1;                    /* Expression: width
+                                        * Referenced by: '<Root>/x-error'
+                                        */
+  real_T xerror_P2;                    /* Expression: dtype
+                                        * Referenced by: '<Root>/x-error'
+                                        */
+  real_T xerror_P3;                    /* Expression: portnum
+                                        * Referenced by: '<Root>/x-error'
+                                        */
+  real_T xerror_P4;                    /* Expression: stime
+                                        * Referenced by: '<Root>/x-error'
+                                        */
+  real_T xerror_P5;                    /* Expression: stype
+                                        * Referenced by: '<Root>/x-error'
+                                        */
+  real_T xerror_P6;                    /* Expression: btype
+                                        * Referenced by: '<Root>/x-error'
                                         */
   real_T Int1_IC;                      /* Expression: 0
                                         * Referenced by: '<Root>/Int1'

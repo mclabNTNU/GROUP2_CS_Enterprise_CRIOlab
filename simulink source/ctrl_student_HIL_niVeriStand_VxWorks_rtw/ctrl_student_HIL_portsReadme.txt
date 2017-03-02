@@ -50,6 +50,9 @@
 <outport> id = "-1" name = "bpsi_hat" width = "1" datatype = "18"</outport>
 <outport> id = "-1" name = "y_m" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "psi_m" width = "1" datatype = "17"</outport>
+<outport> id = "-1" name = "x-error" width = "1" datatype = "0"</outport>
+<outport> id = "-1" name = "y-error" width = "1" datatype = "0"</outport>
+<outport> id = "-1" name = "psi_error" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/X_d" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/N_d" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/Y_d" width = "1" datatype = "0"</outport>
@@ -57,5 +60,4 @@
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/x_0" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/y_0" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/integrator reset model" width = "1" datatype = "0"</outport>
-<outport> id = "-1" name = "x-error" width = "1" datatype = "0"</outport>
 </portlist>

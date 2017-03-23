@@ -10,7 +10,7 @@
 				<String>CSE1</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.119</String>
+				<String>1.0.0.132</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -5197,10 +5197,10 @@
 									<Double>10000</Double>
 								</Property>
 								<Property Name="DLL Size">
-									<I32>242036</I32>
+									<I32>277746</I32>
 								</Property>
 								<Property Name="DLL Timestamp">
-									<Double>3571910136.6650848</Double>
+									<Double>3573124508.2833805</Double>
 								</Property>
 								<Property Name="Decimation">
 									<I32>1</I32>
@@ -5244,7 +5244,7 @@
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\system\ctrl_student_HIL.out</RTDestination>
 										<SupportedTarget>VxWorks</SupportedTarget>
-										<MD5>95ce8439a96a1f4bc041b9f2161621ae</MD5>
+										<MD5>1eb13add7f0a9263db7ba2cb61988477</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
@@ -5317,7 +5317,7 @@
 												<String>joystick/L2_continuous</String>
 											</Property>
 											<Property Name="Index">
-												<I32>3</I32>
+												<I32>16</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/L2_cont" />
@@ -5335,7 +5335,7 @@
 												<String>joystick/PosXRight</String>
 											</Property>
 											<Property Name="Index">
-												<I32>6</I32>
+												<I32>19</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosXRight" />
@@ -5353,7 +5353,7 @@
 												<String>joystick/PosYRight</String>
 											</Property>
 											<Property Name="Index">
-												<I32>7</I32>
+												<I32>20</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosYRight" />
@@ -5371,7 +5371,7 @@
 												<String>joystick/R2_continuous</String>
 											</Property>
 											<Property Name="Index">
-												<I32>10</I32>
+												<I32>23</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/R2_cont" />
@@ -5389,7 +5389,7 @@
 												<String>joystick/PosXLeft</String>
 											</Property>
 											<Property Name="Index">
-												<I32>4</I32>
+												<I32>17</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosXLeft" />
@@ -5407,7 +5407,7 @@
 												<String>joystick/PosYLeft</String>
 											</Property>
 											<Property Name="Index">
-												<I32>5</I32>
+												<I32>18</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosYLeft" />
@@ -5425,7 +5425,7 @@
 												<String>joystick/L1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>11</I32>
+												<I32>24</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/L1" />
@@ -5443,7 +5443,7 @@
 												<String>joystick/R1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>12</I32>
+												<I32>25</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/R1" />
@@ -5461,7 +5461,7 @@
 												<String>joystick/ArrowDown</String>
 											</Property>
 											<Property Name="Index">
-												<I32>9</I32>
+												<I32>22</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/ArrowDown" />
@@ -5479,7 +5479,7 @@
 												<String>joystick/ArrowUp</String>
 											</Property>
 											<Property Name="Index">
-												<I32>8</I32>
+												<I32>21</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/ArrowUP" />
@@ -5497,7 +5497,7 @@
 												<String>joystick/ArrowLeft</String>
 											</Property>
 											<Property Name="Index">
-												<I32>13</I32>
+												<I32>26</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/ArrowLeft" />
@@ -5515,10 +5515,95 @@
 												<String>joystick/ArrowRight</String>
 											</Property>
 											<Property Name="Index">
-												<I32>14</I32>
+												<I32>27</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/ArrowRight" />
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="Observer (CASE C)" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="L2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/L2</String>
+											</Property>
+											<Property Name="Index">
+												<I32>13</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="L1" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/L1</String>
+											</Property>
+											<Property Name="Index">
+												<I32>14</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="L3" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/L3</String>
+											</Property>
+											<Property Name="Index">
+												<I32>15</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="Guidance (CASE D)" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="k2 " TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Guidance (CASE D)/k2 </String>
+											</Property>
+											<Property Name="Index">
+												<I32>11</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="mu1" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Guidance (CASE D)/mu1</String>
+											</Property>
+											<Property Name="Index">
+												<I32>12</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5570,7 +5655,7 @@
 											<String>x_in</String>
 										</Property>
 										<Property Name="Index">
-											<I32>18</I32>
+											<I32>3</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_tau/Outports/eta/x" />
@@ -5588,7 +5673,7 @@
 											<String>r_in</String>
 										</Property>
 										<Property Name="Index">
-											<I32>20</I32>
+											<I32>4</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_tau/Outports/nu/r" />
@@ -5624,7 +5709,7 @@
 											<String>v_in</String>
 										</Property>
 										<Property Name="Index">
-											<I32>21</I32>
+											<I32>5</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_tau/Outports/nu/v" />
@@ -5642,7 +5727,7 @@
 											<String>u_dot_imu</String>
 										</Property>
 										<Property Name="Index">
-											<I32>23</I32>
+											<I32>9</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5657,7 +5742,7 @@
 											<String>enable noise</String>
 										</Property>
 										<Property Name="Index">
-											<I32>19</I32>
+											<I32>10</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5672,7 +5757,7 @@
 											<String>noise power position</String>
 										</Property>
 										<Property Name="Index">
-											<I32>16</I32>
+											<I32>7</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5687,7 +5772,7 @@
 											<String>noise power heading</String>
 										</Property>
 										<Property Name="Index">
-											<I32>17</I32>
+											<I32>8</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5702,52 +5787,7 @@
 											<String>Desired sampling frequency</String>
 										</Property>
 										<Property Name="Index">
-											<I32>15</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="L2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>L2</String>
-										</Property>
-										<Property Name="Index">
-											<I32>22</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="L1" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>L1</String>
-										</Property>
-										<Property Name="Index">
-											<I32>24</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="L3" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>L3</String>
-										</Property>
-										<Property Name="Index">
-											<I32>25</I32>
+											<I32>6</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -5771,7 +5811,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/X_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>54</I32>
+												<I32>33</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5786,7 +5826,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/N_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>55</I32>
+												<I32>34</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5801,7 +5841,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/Y_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>56</I32>
+												<I32>35</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5816,7 +5856,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/psi_0 </String>
 											</Property>
 											<Property Name="Index">
-												<I32>57</I32>
+												<I32>36</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5831,7 +5871,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/x_0</String>
 											</Property>
 											<Property Name="Index">
-												<I32>58</I32>
+												<I32>37</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5846,7 +5886,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/y_0</String>
 											</Property>
 											<Property Name="Index">
-												<I32>59</I32>
+												<I32>38</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5861,7 +5901,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/integrator reset model</String>
 											</Property>
 											<Property Name="Index">
-												<I32>60</I32>
+												<I32>39</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5881,7 +5921,7 @@
 												<String>joystick/u_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>28</I32>
+												<I32>58</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5896,7 +5936,7 @@
 												<String>joystick/alpha_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>29</I32>
+												<I32>59</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5911,7 +5951,7 @@
 												<String>joystick/omega_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>30</I32>
+												<I32>60</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5926,7 +5966,7 @@
 												<String>joystick/omega_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>31</I32>
+												<I32>61</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5941,7 +5981,7 @@
 												<String>joystick/u_BT</String>
 											</Property>
 											<Property Name="Index">
-												<I32>32</I32>
+												<I32>62</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5956,7 +5996,7 @@
 												<String>joystick/alpha_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>33</I32>
+												<I32>63</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5971,7 +6011,7 @@
 												<String>joystick/u_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>34</I32>
+												<I32>64</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5980,21 +6020,391 @@
 										</DefaultValue>
 									</Channel>
 								</Section>
-								<Channel Name="u_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+								<Section Name="eta_hat" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
 									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>u_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>27</I32>
-										</Property>
-									</Properties>
+									<Properties />
 									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
+									<Channel Name="eta_hat(1,1)" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>eta_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>31</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="eta_hat(2,1)" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>eta_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>31</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="eta_hat(3,1)" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>eta_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>31</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="nu_hat" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="nu_hat(1,1)" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>nu_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>32</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="nu_hat(2,1)" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>nu_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>32</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="nu_hat(3,1)" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>nu_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>32</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="tau to CSE mocell (HIL testing)" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+								</Section>
+								<Section Name="Observer (CASE C)" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="u_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/u_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>40</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="x_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/x_m</String>
+											</Property>
+											<Property Name="Index">
+												<I32>41</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="x_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/x_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>42</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="y_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/y_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>43</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="psi_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/psi_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>44</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="v_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/v_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>45</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="r_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/r_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>46</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="bx_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/bx_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>47</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="by_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/by_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>48</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="bpsi_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/bpsi_hat</String>
+											</Property>
+											<Property Name="Index">
+												<I32>49</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="y_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/y_m</String>
+											</Property>
+											<Property Name="Index">
+												<I32>50</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="psi_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/psi_m</String>
+											</Property>
+											<Property Name="Index">
+												<I32>51</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="x-error" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/x-error</String>
+											</Property>
+											<Property Name="Index">
+												<I32>52</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="y-error" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/y-error</String>
+											</Property>
+											<Property Name="Index">
+												<I32>53</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="psi_error" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Observer (CASE C)/psi_error</String>
+											</Property>
+											<Property Name="Index">
+												<I32>54</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="Tank (CASE B)" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="X" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tank (CASE B)/X</String>
+											</Property>
+											<Property Name="Index">
+												<I32>55</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="Y" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tank (CASE B)/Y</String>
+											</Property>
+											<Property Name="Index">
+												<I32>56</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="Z" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tank (CASE B)/Z</String>
+											</Property>
+											<Property Name="Index">
+												<I32>57</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
 								<Channel Name="u_true" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
 									<Description />
 									<Properties>
@@ -6002,22 +6412,7 @@
 											<String>u_true</String>
 										</Property>
 										<Property Name="Index">
-											<I32>26</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="X" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>X</String>
-										</Property>
-										<Property Name="Index">
-											<I32>35</I32>
+											<I32>28</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -6032,22 +6427,7 @@
 											<String>psi_out</String>
 										</Property>
 										<Property Name="Index">
-											<I32>36</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="x_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>x_m</String>
-										</Property>
-										<Property Name="Index">
-											<I32>37</I32>
+											<I32>29</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -6062,232 +6442,7 @@
 											<String>fater noise</String>
 										</Property>
 										<Property Name="Index">
-											<I32>38</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="Y" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>Y</String>
-										</Property>
-										<Property Name="Index">
-											<I32>39</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="Z" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>Z</String>
-										</Property>
-										<Property Name="Index">
-											<I32>40</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="x_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>x_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>41</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="y_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>y_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>42</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="psi_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>psi_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>43</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="v_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>v_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>44</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="r_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>r_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>45</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="bx_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>bx_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>46</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="by_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>by_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>47</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="bpsi_hat" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>bpsi_hat</String>
-										</Property>
-										<Property Name="Index">
-											<I32>48</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="y_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>y_m</String>
-										</Property>
-										<Property Name="Index">
-											<I32>49</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="psi_m" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>psi_m</String>
-										</Property>
-										<Property Name="Index">
-											<I32>50</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="x-error" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>x-error</String>
-										</Property>
-										<Property Name="Index">
-											<I32>51</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="y-error" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>y-error</String>
-										</Property>
-										<Property Name="Index">
-											<I32>52</I32>
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="psi_error" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>psi_error</String>
-										</Property>
-										<Property Name="Index">
-											<I32>53</I32>
+											<I32>30</I32>
 										</Property>
 									</Properties>
 									<Errors />

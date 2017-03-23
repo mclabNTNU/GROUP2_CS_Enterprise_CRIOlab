@@ -15,9 +15,9 @@
  *
  * Code generation for model "ctrl_student_HIL".
  *
- * Model version              : 1.167
+ * Model version              : 1.174
  * Simulink Coder version : 8.8 (R2015a) 09-Feb-2015
- * C source code generated on : Thu Mar 23 15:27:42 2017
+ * C source code generated on : Thu Mar 23 16:26:29 2017
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -186,7 +186,7 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
   1.0,                                 /* Expression: dtype
                                         * Referenced by: '<Root>/Desired sampling frequency'
                                         */
-  12.0,                                /* Expression: portnum
+  11.0,                                /* Expression: portnum
                                         * Referenced by: '<Root>/Desired sampling frequency'
                                         */
   -1.0,                                /* Expression: stime
@@ -204,7 +204,7 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
   1.0,                                 /* Expression: dtype
                                         * Referenced by: '<Root>/noise power position'
                                         */
-  10.0,                                /* Expression: portnum
+  9.0,                                 /* Expression: portnum
                                         * Referenced by: '<Root>/noise power position'
                                         */
   -1.0,                                /* Expression: stime
@@ -240,7 +240,7 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
   1.0,                                 /* Expression: dtype
                                         * Referenced by: '<Root>/noise power heading'
                                         */
-  11.0,                                /* Expression: portnum
+  10.0,                                /* Expression: portnum
                                         * Referenced by: '<Root>/noise power heading'
                                         */
   -1.0,                                /* Expression: stime
@@ -288,7 +288,7 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
   1.0,                                 /* Expression: dtype
                                         * Referenced by: '<Root>/u_dot_imu'
                                         */
-  8.0,                                 /* Expression: portnum
+  7.0,                                 /* Expression: portnum
                                         * Referenced by: '<Root>/u_dot_imu'
                                         */
   -1.0,                                /* Expression: stime
@@ -306,7 +306,7 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
   1.0,                                 /* Expression: dtype
                                         * Referenced by: '<Root>/enable noise'
                                         */
-  9.0,                                 /* Expression: portnum
+  8.0,                                 /* Expression: portnum
                                         * Referenced by: '<Root>/enable noise'
                                         */
   -1.0,                                /* Expression: stime
@@ -518,23 +518,11 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
   0.0,                                 /* Expression: btype
                                         * Referenced by: '<S8>/integrator reset model'
                                         */
-  -1.0,                                /* Expression: width
-                                        * Referenced by: '<S2>/k2 '
+  0.1,                                 /* Expression: 0.1
+                                        * Referenced by: '<S2>/Constant1'
                                         */
-  1.0,                                 /* Expression: dtype
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  1.0,                                 /* Expression: portnum
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  -1.0,                                /* Expression: stime
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  1.0,                                 /* Expression: stype
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  1.0,                                 /* Expression: btype
-                                        * Referenced by: '<S2>/k2 '
+  100.0,                               /* Expression: 100
+                                        * Referenced by: '<S2>/Constant2'
                                         */
   0.0,                                 /* Expression: 0
                                         * Referenced by: '<S2>/s(0)'
@@ -550,24 +538,6 @@ P_ctrl_student_HIL_T ctrl_student_HIL_P = {
                                         */
   0.1,                                 /* Expression: 0.1
                                         * Referenced by: '<S2>/U_max'
-                                        */
-  -1.0,                                /* Expression: width
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  1.0,                                 /* Expression: dtype
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  2.0,                                 /* Expression: portnum
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  -1.0,                                /* Expression: stime
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  1.0,                                 /* Expression: stype
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  1.0,                                 /* Expression: btype
-                                        * Referenced by: '<S2>/mu1'
                                         */
 
   /*  Expression: [0;0;0]
@@ -1569,26 +1539,6 @@ NI_ParamSizeWidth P_ctrl_student_HIL_T_sizes[] DataSection(
   { sizeof(real_T), 10, 0 },
 
   { sizeof(real_T), 10, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
-
-  { sizeof(real_T), 1, 0 },
 
   { sizeof(real_T), 1, 0 },
 

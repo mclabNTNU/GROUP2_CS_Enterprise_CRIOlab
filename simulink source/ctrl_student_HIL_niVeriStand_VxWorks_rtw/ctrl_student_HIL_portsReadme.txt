@@ -10,8 +10,6 @@
 <inport> id="-1"  name = "noise power heading" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "u_dot_imu" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "enable noise" width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "Guidance (CASE D)/k2 " width = "1" datatype = "0"</inport>
-<inport> id="-1"  name = "Guidance (CASE D)/mu1" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "Observer (CASE C)/L2" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "Observer (CASE C)/L1" width = "1" datatype = "0"</inport>
 <inport> id="-1"  name = "Observer (CASE C)/L3" width = "1" datatype = "0"</inport>

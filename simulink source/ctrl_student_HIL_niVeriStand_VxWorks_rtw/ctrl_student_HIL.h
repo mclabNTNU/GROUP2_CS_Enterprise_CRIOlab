@@ -7,9 +7,9 @@
  *
  * Code generation for model "ctrl_student_HIL".
  *
- * Model version              : 1.167
+ * Model version              : 1.174
  * Simulink Coder version : 8.8 (R2015a) 09-Feb-2015
- * C source code generated on : Thu Mar 23 15:27:42 2017
+ * C source code generated on : Thu Mar 23 16:26:29 2017
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -833,9 +833,7 @@ typedef struct {
   real_T Memory1[10];                  /* '<S1>/Memory1' */
   real_T Memory3;                      /* '<S21>/Memory3' */
   real_T Memory5;                      /* '<S21>/Memory5' */
-  real_T k2;                           /* '<S2>/k2 ' */
   real_T s0;                           /* '<S2>/s(0)' */
-  real_T mu1;                          /* '<S2>/mu1' */
   real_T Memory_c[3];                  /* '<S2>/Memory' */
   real_T Memory1_k[3];                 /* '<S2>/Memory1' */
   real_T Memory2_e[3];                 /* '<S2>/Memory2' */
@@ -922,9 +920,7 @@ typedef struct {
   real_T x_0_DWORK1;                   /* '<S8>/x_0' */
   real_T y_0_DWORK1;                   /* '<S8>/y_0' */
   real_T integratorresetmodel_DWORK1;  /* '<S8>/integrator reset model' */
-  real_T k2_DWORK1;                    /* '<S2>/k2 ' */
   real_T s0_PreviousInput;             /* '<S2>/s(0)' */
-  real_T mu1_DWORK1;                   /* '<S2>/mu1' */
   real_T Memory_PreviousInput_a[3];    /* '<S2>/Memory' */
   real_T Memory1_PreviousInput_d[3];   /* '<S2>/Memory1' */
   real_T Memory2_PreviousInput_d[3];   /* '<S2>/Memory2' */
@@ -997,8 +993,6 @@ typedef struct {
   uint8_T x_0_DWORK2[17];              /* '<S8>/x_0' */
   uint8_T y_0_DWORK2[17];              /* '<S8>/y_0' */
   uint8_T integratorresetmodel_DWORK2[17];/* '<S8>/integrator reset model' */
-  uint8_T k2_DWORK2[17];               /* '<S2>/k2 ' */
-  uint8_T mu1_DWORK2[17];              /* '<S2>/mu1' */
   uint8_T u_hat_DWORK2[17];            /* '<S4>/u_hat' */
   uint8_T x_m_DWORK2[17];              /* '<S4>/x_m' */
   uint8_T L2_DWORK2[17];               /* '<S4>/L2' */
@@ -1577,23 +1571,11 @@ struct P_ctrl_student_HIL_T_ {
   real_T integratorresetmodel_P6;      /* Expression: btype
                                         * Referenced by: '<S8>/integrator reset model'
                                         */
-  real_T k2_P1;                        /* Expression: width
-                                        * Referenced by: '<S2>/k2 '
+  real_T Constant1_Value_l;            /* Expression: 0.1
+                                        * Referenced by: '<S2>/Constant1'
                                         */
-  real_T k2_P2;                        /* Expression: dtype
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  real_T k2_P3;                        /* Expression: portnum
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  real_T k2_P4;                        /* Expression: stime
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  real_T k2_P5;                        /* Expression: stype
-                                        * Referenced by: '<S2>/k2 '
-                                        */
-  real_T k2_P6;                        /* Expression: btype
-                                        * Referenced by: '<S2>/k2 '
+  real_T Constant2_Value_p;            /* Expression: 100
+                                        * Referenced by: '<S2>/Constant2'
                                         */
   real_T s0_X0;                        /* Expression: 0
                                         * Referenced by: '<S2>/s(0)'
@@ -1609,24 +1591,6 @@ struct P_ctrl_student_HIL_T_ {
                                         */
   real_T U_max_Gain;                   /* Expression: 0.1
                                         * Referenced by: '<S2>/U_max'
-                                        */
-  real_T mu1_P1;                       /* Expression: width
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  real_T mu1_P2;                       /* Expression: dtype
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  real_T mu1_P3;                       /* Expression: portnum
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  real_T mu1_P4;                       /* Expression: stime
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  real_T mu1_P5;                       /* Expression: stype
-                                        * Referenced by: '<S2>/mu1'
-                                        */
-  real_T mu1_P6;                       /* Expression: btype
-                                        * Referenced by: '<S2>/mu1'
                                         */
   real_T Memory_X0_d[3];               /* Expression: [0;0;0]
                                         * Referenced by: '<S2>/Memory'

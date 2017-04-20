@@ -33,6 +33,9 @@
 <outport> id = "-1" name = "fater noise" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "eta_hat" width = "3" datatype = "22"</outport>
 <outport> id = "-1" name = "nu_hat" width = "3" datatype = "22"</outport>
+<outport> id = "-1" name = "Guidance (CASE D)/x_d" width = "1" datatype = "17"</outport>
+<outport> id = "-1" name = "Guidance (CASE D)/y_d" width = "1" datatype = "17"</outport>
+<outport> id = "-1" name = "Guidance (CASE D)/psi_d" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/X_d" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/N_d" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/Y_d" width = "1" datatype = "17"</outport>
@@ -40,9 +43,6 @@
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/x_0" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/y_0" width = "1" datatype = "0"</outport>
 <outport> id = "-1" name = "tau to CSE mocell (only use for HIL testing)/integrator reset model" width = "1" datatype = "0"</outport>
-<outport> id = "-1" name = "Guidance (CASE D)/x_d" width = "1" datatype = "17"</outport>
-<outport> id = "-1" name = "Guidance (CASE D)/y_d" width = "1" datatype = "17"</outport>
-<outport> id = "-1" name = "Guidance (CASE D)/psi_d" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "Observer (CASE C)/u_hat" width = "1" datatype = "22"</outport>
 <outport> id = "-1" name = "Observer (CASE C)/x_m" width = "1" datatype = "17"</outport>
 <outport> id = "-1" name = "Observer (CASE C)/x_hat" width = "1" datatype = "22"</outport>

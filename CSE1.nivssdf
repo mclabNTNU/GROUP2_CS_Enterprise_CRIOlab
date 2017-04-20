@@ -10,7 +10,7 @@
 				<String>CSE1</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.167</String>
+				<String>1.0.0.171</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -31,7 +31,7 @@
 						<String>VxWorks</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>192.168.0.71</String>
+						<String>192.168.0.76</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -5197,10 +5197,10 @@
 									<Double>10000</Double>
 								</Property>
 								<Property Name="DLL Size">
-									<I32>283618</I32>
+									<I32>281242</I32>
 								</Property>
 								<Property Name="DLL Timestamp">
-									<Double>3573195360.6784406</Double>
+									<Double>3575510680.6338229</Double>
 								</Property>
 								<Property Name="Decimation">
 									<I32>1</I32>
@@ -5244,10 +5244,13 @@
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\system\ctrl_student_HIL.out</RTDestination>
 										<SupportedTarget>VxWorks</SupportedTarget>
-										<MD5>649e6aa3b139208f34181ee39cd86461</MD5>
+										<MD5>c13656f412e549599359200a7ee17de7</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
+									<I32>0</I32>
+								</Property>
+								<Property Name="Group">
 									<I32>0</I32>
 								</Property>
 							</Properties>
@@ -5307,21 +5310,6 @@
 									<Description />
 									<Properties />
 									<Errors />
-									<Channel Name="k22" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-										<Description />
-										<Properties>
-											<Property Name="Model Path">
-												<String>Guidance (CASE D)/k22</String>
-											</Property>
-											<Property Name="Index">
-												<I32>13</I32>
-											</Property>
-										</Properties>
-										<Errors />
-										<DefaultValue>
-											<Elem>0</Elem>
-										</DefaultValue>
-									</Channel>
 									<Channel Name="mu1" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
 										<Description />
 										<Properties>
@@ -5330,6 +5318,21 @@
 											</Property>
 											<Property Name="Index">
 												<I32>12</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="k22" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Guidance (CASE D)/k22</String>
+											</Property>
+											<Property Name="Index">
+												<I32>13</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5923,7 +5926,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/X_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>34</I32>
+												<I32>37</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5938,7 +5941,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/N_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>35</I32>
+												<I32>38</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5953,7 +5956,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/Y_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>36</I32>
+												<I32>39</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5968,7 +5971,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/psi_0 </String>
 											</Property>
 											<Property Name="Index">
-												<I32>37</I32>
+												<I32>40</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5983,7 +5986,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/x_0</String>
 											</Property>
 											<Property Name="Index">
-												<I32>38</I32>
+												<I32>41</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -5998,7 +6001,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/y_0</String>
 											</Property>
 											<Property Name="Index">
-												<I32>39</I32>
+												<I32>42</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -6013,7 +6016,7 @@
 												<String>tau to CSE mocell (only use for HIL testing)/integrator reset model</String>
 											</Property>
 											<Property Name="Index">
-												<I32>40</I32>
+												<I32>43</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -6423,7 +6426,7 @@
 												<String>Guidance (CASE D)/x_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>41</I32>
+												<I32>34</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -6438,7 +6441,7 @@
 												<String>Guidance (CASE D)/y_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>42</I32>
+												<I32>35</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -6453,7 +6456,7 @@
 												<String>Guidance (CASE D)/psi_d</String>
 											</Property>
 											<Property Name="Index">
-												<I32>43</I32>
+												<I32>36</I32>
 											</Property>
 										</Properties>
 										<Errors />
